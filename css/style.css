@@ -13,6 +13,7 @@
   --letter-form-background: #F4F4F4;
   /* Basic */
   --basic-black: #000000;
+  --basic-super-dark:#1D2739;
   --basic-extra-dark: #293449;
   --basic-dark: #32425C;
   --basic-white: #ffffff;
@@ -53,4 +54,37 @@ a {
 img {
   max-width: 100%;
   height: auto;
+}
+
+/* Main navigation */
+
+.main-navigation {
+  color: var(--basic-white);
+  background-color: var(--basic-dark);
+}
+
+.main-navigation-wrapper {
+  background-color: var(--basic-dark);
+}
+
+.site-navigation {
+  list-style: none;
+}
+
+.site-navigation-current a:not([href]) {
+  background-color: var(--basic-dark);
+}
+
+/* User navigation */
+
+
+.site-navigation a,
+.user-navigation a {
+  color: var(--basic-white);
+}
+.site-navigation a:hover,
+.site-navigation a:focus,
+.user-navigation a:hover,
+.user-navigation a:focus {
+  background-color: var(--basic-super-dark);
 }
