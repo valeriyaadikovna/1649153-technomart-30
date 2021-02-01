@@ -22,13 +22,13 @@
   --basic-extra-light: #C5C5C5;
   --basic-red: #EE3643;
   /* Interaction */
-  --click-logo: #BA2732;
   --click-header: #1D2739;
-  --quiet-botton-buy: #63A63E;
-  --touch-quiet-botton-buy: #5FBB2D;
-  --click-botton-buy: #518534;
-  --touch-catalog-botton: #CA2C37;
-  --touch-login-botton: #3D546F;
+  --quiet-button-buy: #63A63E;
+  --hover-button-buy: #5FBB2D;
+  --click-button-buy: #518534;
+  --hover-red-button: #CA2C37;
+  --click-red-button: #BA2732;
+  --hover-login-button: #3D546F;
    /* Text */
   --text-footer-nav: #FFDA96;
 }
@@ -54,6 +54,14 @@ a {
 img {
   max-width: 100%;
   height: auto;
+}
+
+.main-header {
+  color: var(--basic-white);
+  background-color: var(--basic-dark);
+  background-image: url("../img/Layer_footer.jpg");
+  background-position: 0 0;
+  background-repeat: repeat;
 }
 
 /* Main navigation */
@@ -88,3 +96,144 @@ img {
 .user-navigation a:focus {
   background-color: var(--basic-super-dark);
 }
+
+/* Features */
+.features-list {
+  list-style: none;
+}
+
+.feature-item h3 {
+  font-size: 24px;
+  line-height: 30px;
+}
+
+/* Gallery */
+
+.gallery-content {
+  background-color: var(--basic-white);
+}
+
+/* Popular goods */
+
+.popgoods-list {
+  list-style: none;
+}
+
+.popgoods-item h3 {
+  font-size: 18px;
+  line-height: 20px;
+}
+
+/* Contacts */
+
+.contacts-phone {
+  color: inherit;
+}
+
+/* Popular manufacturers */
+
+.popmanufacturers-list {
+  list-style: none;
+}
+
+.popmanufacturers-item h3 {
+  font-size: 18px;
+  line-height: 20px;
+}
+
+/* Contacts */
+
+.contacts-phone {
+  color: inherit;
+}
+
+.main-footer {
+  color: var(--basic-white);
+  background-color: var(--basic-dark);
+  background-image: url("../img/Layer_footer.jpg");
+  background-position: 0 0;
+  background-repeat: repeat;
+}
+
+.footer-contacts a {
+  color: var(--basic-white);
+}
+
+.footer-contacts a:hover {
+  text-decoration: underline;
+}
+
+.footer-contacts a:focus {
+  color: var(--basic-background);
+}
+
+.footer-social {
+  text-align: center;
+}
+
+.footer-social ul {
+  list-style: none;
+}
+
+.footer-social h2 {
+  font-size: 16px;
+}
+
+.social-button {
+  color: inherit;
+}
+
+.social-button:hover,
+.social-button:focus {
+  background-color: var(--basic-red);
+}
+
+.footer-copyright a {
+  color: var(--text-footer-nav);
+}
+
+.footer-copyright .button:hover{
+  text-decoration: underline;
+}
+
+.footer-copyright .button:focus {
+  color: var(--basic-red);
+}
+
+.modal {
+  color: var(--basic-black);
+  background-color: var(--basic-white);
+}
+
+.modal-login h2 {
+  font-size: 18px;
+  line-height: 24px;
+}
+
+/* Letter form */
+
+.letter-form input[type="name"],
+.letter-form input[type="email"],
+.letter-form input[type="text"] {
+  font: inherit;
+  color: var(--basic-black);
+  background-color: var(--basic-white);
+  border: 2px solid var(--basic-extra-light);
+}
+
+.letter-form input:focus {
+  border-color: var(--basic-black);
+}
+
+
+.button {
+  color: var(--basic-white);
+  background-color: var(--basic-red);
+}
+.button:hover{
+  background-color: var(--hover-red-button);
+}
+.button:focus{
+  background-color: var(--click-red-button);
+}
+
