@@ -1,0 +1,33 @@
+/* Variables */
+
+:root {
+  /* Background */
+  --basic-background: #F1F5F7;
+  --materials-background: #FFBF47;
+  --instrumets-background: #3BBCE3;
+  --technics-background: #DC91D8;
+  --sale-background: #8ED78F;
+  --delivery-background: #FFC047;
+  --popular-goods-background: #F9F5F0;
+  --soc-media-background: #212A3A;
+  --letter-form-background: #F4F4F4;
+  /* Basic */
+  --basic-black: #000000;
+  --basic-extra-dark: #293449;
+  --basic-dark: #32425C;
+  --basic-white: #ffffff;
+  --basic-neutral: #A9A9A9;
+  --basic-light: #C1C6CE;
+  --basic-extra-light: #C5C5C5;
+  --basic-red: #EE3643;
+  /* Interaction */
+  --click-logo: #BA2732;
+  --click-header: #1D2739;
+  --quiet-botton-buy: #63A63E;
+  --touch-quiet-botton-buy: #5FBB2D;
+  --click-botton-buy: #518534;
+  --touch-catalog-botton: #CA2C37;
+  --touch-login-botton: #3D546F;
+   /* Text */
+  --text-footer-nav: #FFDA96;
+}
