@@ -56,12 +56,20 @@ img {
   height: auto;
 }
 
-.main-header {
+.inner-page .main-header {
   color: var(--basic-white);
   background-color: var(--basic-dark);
   background-image: url("../img/Layer_footer.jpg");
   background-position: 0 0;
   background-repeat: repeat;
+}
+
+.inner-page {
+  color: var(--basic-black);
+  background-color: var(--basic-white);
+  /*background-image: url("../img/pattern-light.jpg");
+  background-position: 0 0;
+  background-repeat: repeat;*/
 }
 
 /* Main navigation */
@@ -147,13 +155,118 @@ img {
   color: inherit;
 }
 
-.main-footer {
+.inner-page .main-footer {
   color: var(--basic-white);
   background-color: var(--basic-dark);
   background-image: url("../img/Layer_footer.jpg");
   background-position: 0 0;
   background-repeat: repeat;
 }
+
+.page-title {
+  font-size: 30px;
+  line-height: 30px;
+}
+
+/* Breadcrumbs */
+.breadcrumbs {
+  list-style: none;
+}
+
+.breadcrumbs a {
+  color: var(--basic-black);
+}
+
+.breadcrumbs a:hover,
+.breadcrumbs a:focus {
+  text-decoration: underline;
+}
+
+/* Filters */
+
+.filter legend {
+  font-size: 15px;
+  line-height: 19px;
+}
+
+.filter ul {
+  list-style: none;
+  line-height: 18px;
+}
+
+.filter-input-checkbox:hover + label,
+.filter-input-checkbox:focus + label {
+  color: var(--basic-black);
+}
+
+/* Catalog */
+
+.catalog-list {
+  list-style: none;
+}
+
+.catalog-item {
+  background-color: var(--basic-white);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1)
+}
+
+.catalog-item a {
+  color: var(--basic-black);
+}
+
+.catalog-item h3 {
+  font-size: 18px;
+  line-height: 20px;
+}
+
+
+.catalog-item p {
+  font-size: 17px;
+  line-height: 18px;
+  background-color: var(--basic-white);
+}
+
+.catalog-item .buy-button {
+  line-height: 18px;
+  text-transform: uppercase;
+  color: var(--basic-white);
+  background-color: var(--quiet-button-buy);
+}
+
+.pagination-list {
+  list-style: none;
+}
+
+.pagination-item a {
+  color: var(--basic-black);
+  background-color: var(--basic-white);
+  border: #E5E5E5;
+}
+
+.pagination-item a:hover {
+  border: var(--basic-extra-light);
+}
+
+.pagination-item a:focus{
+  border: var(--basic-red);
+}
+.pagination-item a:active {
+  background-color: var(--basic-red);
+}
+
+.pagination-item-current a,
+.pagination-item-current a:hover{
+  border: var(--basic-extra-light);
+}
+.pagination-item-current a:focus{
+  border: var(--basic-red);
+}
+.pagination-item-current a:active {
+  color: var(--basic-black);
+  background-color: var(--basic-red);
+}
+
+/* Footer */
 
 .footer-contacts a {
   color: var(--basic-white);
