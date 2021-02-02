@@ -132,11 +132,27 @@ img {
   line-height: 20px;
 }
 
-/* Contacts */
-
-.contacts-phone {
-  color: inherit;
+.popgoods-item p {
+  font-size: 17px;
+  line-height: 18px;
+  background-color: var(--basic-white);
+  color: var(--basic-neutral);
 }
+
+.popgoods-item a {
+  font-size: 17px;
+  line-height: 18px;
+  background-color: var(--basic-red);
+  color: var(--basic-white);
+}
+
+.popgoods-item .buy-button {
+  line-height: 18px;
+  text-transform: uppercase;
+  color: var(--basic-white);
+  background-color: var(--quiet-button-buy);
+}
+
 
 /* Popular manufacturers */
 
@@ -224,6 +240,7 @@ img {
   font-size: 17px;
   line-height: 18px;
   background-color: var(--basic-white);
+  color: var(--basic-neutral)
 }
 
 .catalog-item .buy-button {
