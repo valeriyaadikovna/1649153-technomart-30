@@ -237,31 +237,31 @@ img {
   list-style: none;
 }
 
-.pagination-item a {
+.pagination-link {
   color: var(--basic-black);
   background-color: var(--basic-white);
   border: #E5E5E5;
 }
 
-.pagination-item a:hover {
+.pagination-link:hover {
   border: var(--basic-extra-light);
 }
 
-.pagination-item a:focus{
+.pagination-link:focus{
   border: var(--basic-red);
 }
-.pagination-item a:active {
+.pagination-link:active {
   background-color: var(--basic-red);
 }
 
-.pagination-item-current a,
-.pagination-item-current a:hover{
+.pagination-link-current,
+.pagination-link-current:hover{
   border: var(--basic-extra-light);
 }
-.pagination-item-current a:focus{
+.pagination-link-current:focus{
   border: var(--basic-red);
 }
-.pagination-item-current a:active {
+.pagination-link-current:active {
   color: var(--basic-black);
   background-color: var(--basic-red);
 }
