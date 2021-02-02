@@ -325,9 +325,9 @@ img {
 
 /* Letter form */
 
-.letter-form input[type="name"],
-.letter-form input[type="email"],
-.letter-form input[type="text"] {
+.letter-icon-name input[type="name"],
+.letter-icon-e-mail input[type="email"],
+.letter-icon-text input[type="text"] {
   font: inherit;
   color: var(--basic-black);
   background-color: var(--basic-white);
