@@ -93,34 +93,18 @@ img {
   line-height: 18px;
   text-transform: uppercase;
   color: var(--basic-black);
+  background-color: var(--basic-white);
 }
 
 .button-red {
-  font-size: 14px;
-  line-height: 18px;
   background-color: var(--basic-red);
-  text-transform: uppercase;
   color: var(--basic-white);
-}
-
-.button-red {
-  color: var(--basic-white);
-  background-color: var(--basic-red);
 }
 .button-red:hover{
   background-color: var(--hover-red-button);
 }
 .button-red:focus{
   background-color: var(--click-red-button);
-}
-
-
-.button-green {
-  font-size: 14px;
-  line-height: 18px;
-  text-transform: uppercase;
-  color: var(--basic-white);
-  background-color: var(--quiet-button-buy);
 }
 
 .button-green {
@@ -245,8 +229,9 @@ img {
 /* Filters */
 
 .filter legend {
-  font-size: 15px;
-  line-height: 19px;
+  font-size: 17px;
+  line-height: 30px;
+  text-transform: uppercase;
 }
 
 .filter ul {
@@ -254,10 +239,29 @@ img {
   line-height: 18px;
 }
 
+.filters h2 {
+  font-size: 13px;
+  line-height: 18px;
+  text-transform: uppercase;
+}
+
 .filter-input-checkbox:hover + label,
 .filter-input-checkbox:focus + label {
   color: var(--basic-black);
 }
+
+/* Sort */
+.sort h2 {
+  font-size: 13px;
+  line-height: 18px;
+  text-transform: uppercase;
+}
+
+/* Input */
+/*.input {
+
+}
+*/
 
 /* Catalog */
 
