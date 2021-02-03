@@ -156,6 +156,18 @@ img {
   background-color: var(--basic-white);
 }
 
+.h2 {
+  font-size: 30px;
+  line-height: 30px;
+  text-transform: uppercase;
+  color: var(--basic-dark);
+}
+
+.h2-black {
+  color: var(--basic-black);
+}
+
+}
 /* Popular goods */
 
 .popgoods-list {
