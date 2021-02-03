@@ -208,7 +208,9 @@ img {
 /* Contacts */
 
 .contacts-phone {
-  color: inherit;
+  color: var(--basic-red);
+  font-size: 21px;
+  line-height: 30px;
 }
 
 .inner-page .main-footer {
