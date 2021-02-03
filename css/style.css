@@ -234,6 +234,12 @@ img {
   text-transform: uppercase;
 }
 
+.filter label {
+  font-size: 15px;
+  line-height: 19px;
+  text-transform: uppercase;
+}
+
 .filter ul {
   list-style: none;
   line-height: 18px;
