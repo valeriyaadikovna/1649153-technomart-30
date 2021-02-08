@@ -517,8 +517,40 @@ p {
   padding: 0;
 }
 
-/* CATALOG */
+/* CATALOG GRID*/
 
+.page-catalog .page-title {
+  grid-column: 1 / -1;
+}
+
+.template-columns {
+  display: grid;
+  grid-template-columns: 220px 1fr;
+  grid-gap: 20px;
+}
+
+.catalog-content {
+  display: grid;
+  grid-gap: 28px;
+}
+
+
+.catalog-list {
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 20px;
+}
+
+.catalog-info {
+  grid-column: 1 / -1;
+}
+
+.pagination-list {
+  grid-column: 1 / -1;
+}
+
+/* Catalog */
 
 .catalog-item a {
   color: var(--basic-black);
@@ -569,40 +601,6 @@ p {
   background-color: var(--basic-red);
 }
 
-.page-catalog .page-title {
-  grid-column: 1 / -1;
-}
-
-.filters {
-  display: grid;
-  grid-template-columns: 220px;
-  grid-gap: 20px;
-}
-
-.sort {
-  display: grid;
-  grid-template-columns: max-content;
-  grid-gap: 20px;
-}
-
-.catalog {
-  display: grid;
-  grid-template-columns: 700px;
-  margin-left: 20px;
-}
-
-
-.catalog-list {
-  list-style: none;
-  display: grid;
-  grid-template-columns:  1fr 1fr 1fr;
-  grid-gap: 20px;
-}
-
-
-.catalog-info {
-  grid-column: 1 / -1;
-}
 
 /* Breadcrumbs */
 
@@ -658,7 +656,10 @@ p {
 
 /* Sort */
 
+.sort {
+  grid-column: 2/-1;
 
+}
 .sort h2 {
   font-size: 13px;
   line-height: 18px;
