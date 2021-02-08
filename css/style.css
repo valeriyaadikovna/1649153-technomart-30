@@ -114,8 +114,6 @@ p {
   grid-template-columns: 220px 271px 150px 150px 150px;
   width: 940px;
   color: var(--basic-white);
-  margin: 0 auto;
-  padding: 0 10px;
 }
 
 /* Main navigation */
@@ -373,17 +371,14 @@ p {
 
 /* Popular manufacturers */
 
-.popmanufacturers {
-display: grid;
-grid-template-columns: 1fr 1fr 1fr 1fr;
-align-content: start;
-}
-
 .popmanufacturers h2 {
   grid-column: 1 / -1;
 }
 
 .popmanufacturers-list {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  align-content: start;
   margin: 0;
   margin-bottom: 15px;
   padding: 0;
@@ -450,9 +445,6 @@ align-content: start;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   background-color: var(--basic-extra-dark);
-  width: 940px;
-  margin: 0 auto;
-  padding: 0 10px;
 }
 
 .footer-contacts {
@@ -527,9 +519,6 @@ align-content: start;
 
 /* CATALOG */
 
-.catalog-list {
-  list-style: none;
-}
 
 .catalog-item a {
   color: var(--basic-black);
@@ -580,21 +569,35 @@ align-content: start;
   background-color: var(--basic-red);
 }
 
-.catalog {
-  grid-column: 2 / -1;
-  margin-left: 20px;
-}
-
-.page-catalog {
-  display: grid;
-  grid-template-columns: 220px 1fr;
-  align-content: start;
-}
-
 .page-catalog .page-title {
   grid-column: 1 / -1;
 }
 
+.filters {
+  display: grid;
+  grid-template-columns: 220px;
+  grid-gap: 20px;
+}
+
+.sort {
+  display: grid;
+  grid-template-columns: max-content;
+  grid-gap: 20px;
+}
+
+.catalog {
+  display: grid;
+  grid-template-columns: 700px;
+  margin-left: 20px;
+}
+
+
+.catalog-list {
+  list-style: none;
+  display: grid;
+  grid-template-columns:  1fr 1fr 1fr;
+  grid-gap: 20px;
+}
 
 
 .catalog-info {
@@ -655,11 +658,6 @@ align-content: start;
 
 /* Sort */
 
-.sort{
-  margin-left: 20px;
-  grid-column: 2 / -1;
-  height: min-content;
-}
 
 .sort h2 {
   font-size: 13px;
