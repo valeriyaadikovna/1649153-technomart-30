@@ -111,7 +111,7 @@ p {
 
 .main-high-header {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-template-columns: 220px 271px 150px 150px 150px;
   width: 940px;
   color: var(--basic-white);
   margin: 0 auto;
