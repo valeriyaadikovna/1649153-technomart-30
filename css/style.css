@@ -334,10 +334,7 @@ p {
 
 /* Popular goods */
 
-.popgoods {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-}
+
 
 .popgoods h2 {
   grid-column: 1 / -1;
@@ -345,6 +342,8 @@ p {
 
 
 .popgoods-list {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
   margin: 0;
   margin-bottom: 15px;
   padding: 0;
