@@ -193,6 +193,7 @@ p {
   line-height: 23px;
   font-style: italic;
   margin-left: 30px;
+  margin-bottom: 44.5px;
   color: var(--basic-red);
 }
 
@@ -218,7 +219,8 @@ p {
 .adress {
   font-size: 14px;
   line-height: 24px;
-  color: var(--basic-dark)
+  color: var(--basic-dark);
+  margin-bottom: 40px;
 }
 
 .login-link {
@@ -257,20 +259,41 @@ p {
 /* Button */
 
 .button {
+  display: inline-block;
+  padding: 10px 30px;
+  font: inherit;
   font-size: 14px;
   line-height: 18px;
+  text-align: center;
   text-transform: uppercase;
   color: var(--basic-black);
   background-color: var(--basic-white);
+  border: none;
+}
+
+.button-wg {
+  color: var(--basic-dark);
+  background-color: var(--basic-white);
+  border: 3px solid var(--basic-green);
+}
+
+.button-wg:hover{
+  border: 3px solid var(--basic-dark);
+}
+
+.button-wg:focus{
+  border: 3px solid var(--basic-dark);
 }
 
 .button-red {
   background-color: var(--basic-red);
   color: var(--basic-white);
 }
+
 .button-red:hover{
   background-color: var(--hover-red-button);
 }
+
 .button-red:focus{
   background-color: var(--click-red-button);
 }
@@ -286,6 +309,9 @@ p {
   background-color: var(--click-green-button);
 }
 
+.button_footer{
+  padding: 0;
+}
 
 /* Features */
 
@@ -362,6 +388,24 @@ p {
   list-style: none;
 }
 
+.button-green{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 38px;
+  width: 135px;
+  margin-bottom: 10px;
+}
+
+.button-wg {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 38px;
+  width: 135px;
+  margin-top: 10px;
+}
+
 .popgoods-item h3 {
   font-size: 18px;
   line-height: 20px;
@@ -434,7 +478,6 @@ p {
 /* Footer */
 
 .main-footer {
-
   margin-top: 70px;
   color: var(--basic-white);
   background-color: var(--basic-dark);
@@ -454,7 +497,6 @@ p {
 }
 
 .main-low-footer {
-  padding: 35px;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   background-color: var(--basic-extra-dark);
@@ -462,10 +504,19 @@ p {
 
 .footer-contacts {
   width: 321px;
-  margin-top: 22;
+  margin-top: 22px;
+}
+
+.footer-rulls {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 36px;
+  margin-bottom: 34px;
 }
 
 .footer-social {
+  display: flex;
+  flex-wrap: wrap;
   text-align: center;
   width: 132px;
   justify-self: center;
@@ -473,10 +524,24 @@ p {
 }
 
 .footer-social ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 141px;
+  margin: 0 auto;
+  padding: 0;
   list-style: none;
 }
 
 .social-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  margin-top: 34px;
+  margin-bottom: 29px;
+  background-color: var(--soc-media-background);
   color: inherit;
 }
 
@@ -486,14 +551,23 @@ p {
 }
 
 .footer-copyright {
-  max-width: 286px;
+  display: flex;
+  flex-wrap: wrap;
   margin-right: 13px;
   justify-self: end;
 }
 
+.footer-copyright p {
+  display: block;
+  justify-content: space-between;
+  width: 137px;
+  padding: 0;
+  margin-top: 35px;
+}
+
 .footer-copyright a {
   color: var(--text-footer-nav);
-  background-color: var(--basic-dark);
+  background-color: var(--basic-extra-dark);
 }
 
 .footer-copyright .button:hover{
@@ -502,6 +576,20 @@ p {
 
 .footer-copyright .button:focus {
   color: var(--basic-red);
+}
+
+.top-navigation {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.bottom-navigation {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.bottom-navigation a{
+  color: var(--text-footer-nav);
 }
 
 .modal {
