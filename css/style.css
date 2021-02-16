@@ -22,6 +22,7 @@
   --basic-extra-light: #C5C5C5;
   --basic-red: #EE3643;
   --basic-green: #63A63E;
+  --basic-blue: #f3f7f9;
   /* Interaction */
   --click-header: #1D2739;
   --hover-green-button: #5FBB2D;
@@ -101,7 +102,9 @@ p {
 /* Header */
 
 .main-header {
-  margin-bottom: 60px;
+  margin-bottom: 59px;
+  padding-bottom: 60px;
+  background-color: var(--basic-blue);
 }
 .inner-page .main-navigation-wrapper {
   color: var(--basic-white);
@@ -117,6 +120,7 @@ p {
 
 .main-header-bar {
   background-color: var(--basic-extra-dark);
+  height: 42px;
 }
 
 .main-footer-bar{
@@ -127,6 +131,10 @@ p {
   display: grid;
   grid-template-columns: 220px 271px 150px 150px 150px;
   width: 940px;
+  color: var(--basic-white);
+}
+
+.main-high-header a{
   color: var(--basic-white);
 }
 
@@ -167,11 +175,6 @@ p {
   padding: 20px;
 }
 
-.main-high-header a{
-  color: var(--basic-white);
-}
-
-
 .site-navigation-current a:not([href]) {
   background-color: var(--basic-dark);
 }
@@ -186,6 +189,7 @@ p {
   width: 940px;
   margin: 0 auto;
   padding-top: 42px;
+  background-color: var(--basic-blue);
 }
 
 .tagline p{
@@ -265,10 +269,47 @@ p {
   font-size: 14px;
   line-height: 18px;
   text-align: center;
+  vertical-align: middle;
   text-transform: uppercase;
   color: var(--basic-black);
   background-color: var(--basic-white);
   border: none;
+}
+
+.book {
+  display: inline-block;
+  padding-top: 9px;
+  font: inherit;
+  font-size: 18px;
+  line-height: 24px;
+  text-align: center;
+  text-transform: none;
+  background-color: var(--basic-extra-dark);
+  border: none;
+}
+
+.button-order {
+  background-color: var(--basic-green);
+  text-transform: none;
+  font-size: 18px;
+  line-height: 24px;
+  padding: 9px;
+}
+
+.button-order:hover{
+  background-color: var(--hover-green-button);
+}
+
+.button-order:focus{
+  background-color: var(--click-green-button);
+}
+.features-button {
+
+  padding: 10px 30px;
+  width: 135px;
+  height: 38px;
+  background-color: var(--basic-white);
+  opacity: 0.3;
 }
 
 .button-wg {
@@ -318,58 +359,111 @@ p {
 .features {
   margin-bottom: 80px;
 }
-.features-item {
-  width: 300px;
-  height: 123px;
-  text-align: left;
-  padding-left: 20px;
-}
+
 .features-list {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: 300px 300px 300px;
+  grid-template-rows: 123px 123px 123px;
   gap: 20px;
   margin: 0;
   padding: 0;
   list-style: none;
 }
 
-.feature-item h3 {
+.features-item {
+
+  text-align: left;
+  padding-left: 20px;
+}
+
+.features h3 {
   font-size: 24px;
   line-height: 30px;
+  color: var(--basic-white)
 }
 
-.features-list .features-item-gallery {
-  grid-column: 1/3;
-  grid-row: 2/3;
+.features-item-material {
+  position:relative;
+  background:var(--materials-background) url("../img/icon/icon-1_materials.svg") no-repeat 83% 53%;
 }
 
-.features-list .features-item-delivery {
+.features-item-instrument {
+  background:var(--instrumets-background) url("../img/icon/icon-2_inst.svg") no-repeat 87% 53%;
+}
+
+.features-item-equipment {
+  background:var(--technics-background) url("../img/icon/icon-3_tech.svg") no-repeat 87% 53%;
+}
+
+.features-item-delivery {
   grid-column: 3/3;
   grid-row: 3/3;
+  background:var(--delivery-background) url("../img/icon/icon-5_delivery.svg") no-repeat 87% 53%;
 }
 
-.features-list .features-item-sale {
+.features-item-sale {
   grid-column-start: 3/3;
   grid-row: 2/3;
+  background:var(--sale-background) url("../img/icon/icon-4_sale.png") no-repeat 87% 53%;
+}
+
+.features-item-gallery {
+  grid-column: 1/3;
+  grid-row: 2/3;
+  outline: 5px solid #ff0000;
 }
 
 /* Gallery */
 
-.gallery-content {
-  background-color: var(--basic-white);
+.gallery-container {
+  position: relative;
+  width: 620px;
+  height: 266px;
+
+  outline: 5px solid #0400ff;
+}
+
+.gallery-content{
+  width: 620px;
+  height: 266px;
+  margin: 0;
+  outline: 5px solid #33ff00;
+}
+
+.slide h2{
+  font-size:36px;
+  line-height:30px;
+  margin:0;
+  padding:26px 0 0 24px;
+
+}
+.slide p{
+  margin-top:4px;
+  font:18px/24px "PT Sans","Arial",sans-serif}
+
+.slide-control {
+  position:absolute;
+  bottom: 0;
+  margin: 0;
+  left:48%;
+  display:flex;
+  justify-content:space-between;
 }
 
 .gallery-content h2{
   font-weight: bold;
   font-size: 36px;
   line-height: 36px;
- /*  color: var(--basic-white);*/
+  margin: 0;
+  padding: 26px 0 0 24px;
+  color: var(--basic-black);
 }
 
 .gallery-content p{
   font-size: 18px;
   line-height: 24px;
- /*  color: var(--basic-white);*/
+  margin-top: 4px;
+  color: var(--basic-black);
 }
 
 /* Popular goods */
