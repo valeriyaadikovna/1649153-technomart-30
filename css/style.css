@@ -158,7 +158,6 @@ p {
 
 /* Site navigation */
 
-
 .site-navigation a:hover,
 .site-navigation a:focus {
   background-color: var(--basic-super-dark);
@@ -234,17 +233,32 @@ p {
   justify-content: space-between;
 }
 
-.login-link,
-.reg-link{
-  display: inline-block;
-  text-align: center;
-  height: 45px;
-  width: 121px;
-  margin-bottom: 46px;
+.login-link{
+  position:relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: auto 0 67px 69px;
+  padding: 12px 27px 12px 45px;
   font-size: 21px;
   line-height: 21px;
-  color: var(--basic-black);
+  margin-left: 10px;
   background-color: var(--basic-white);
+  color: var(--basic-black);
+}
+
+.reg-link{
+  position:relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: auto 0 67px 10px;
+  padding: 12px 24px;
+  font-size: 21px;
+  line-height: 21px;
+  background-color: var(--basic-white);
+  color: var(--basic-black);
+
 }
 
 .profile a:hover {
@@ -278,38 +292,68 @@ p {
   background-color: var(--basic-white);
   border: none;
 }
-
-.book {
-  display: inline-block;
+.search {
   padding-top: 9px;
-  font: inherit;
+  padding-left: 50px;
+}
+
+.bookmark {
+  display: flex;
+  position: relative;
+  padding-left: 50px;
+  padding-top: 9px;
   font-size: 18px;
   line-height: 24px;
   text-align: center;
   text-transform: none;
-  background-color: var(--basic-extra-dark);
+  background-color: inherit;
+  border: none;
+}
+.basket {
+  display: flex;
+  position: relative;
+  padding-left: 50px;
+  padding-top: 9px;
+  font-size: 18px;
+  line-height: 24px;
+  text-align: center;
+  text-transform: none;
+  background-color: inherit;
   border: none;
 }
 
-.button-order {
-  background-color: var(--basic-green);
-  text-transform: none;
+.order {
+  display: flex;
+  position: relative;
+  width: 150px;
+  text-align: center;
+  justify-content: center;
+  padding-top: 9px;
   font-size: 18px;
   line-height: 24px;
-  padding: 9px;
+  text-transform: none;
+  background-color: var(--basic-green);
+  color: var(--basic-white);
 }
 
-.button-order:hover{
+.order:hover{
   background-color: var(--hover-green-button);
 }
 
-.button-order:focus{
+.order:focus{
   background-color: var(--click-green-button);
 }
-.features-button {
-  padding: 10px 30px;
+
+.features-button{
+  display: flex;
+  position: absolute;
+  align-items: center;
+  justify-content: center;
+  width: 135px;
   background-color: var(--basic-white);
   opacity: 0.3;
+  margin: 64px 142px 21px 22px;
+  padding: 10px 0;
 }
 
 .button-green{
@@ -389,14 +433,17 @@ p {
 }
 
 .features-item {
+  display: flex;
+  position: relative;
   text-align: left;
-  padding-left: 20px;
+  z-index: 1;
 }
 
 .features h3 {
   font-size: 24px;
   line-height: 30px;
-  color: var(--basic-white)
+  color: var(--basic-white);
+  padding-left: 23px;
 }
 
 .features-item-material {
@@ -510,6 +557,17 @@ p {
   margin-bottom: 70px;
 }
 
+
+.popgoods-item:hover{
+  box-shadow: 0px 4px 20px var(--border-popgoods);
+  }
+
+.popgoods-item:active{
+  opacity: 0.3;
+  box-shadow: 0px 4px 20px var(--border-popgoods);
+  }
+
+
 .pic-box{
   display: flex;
   height: 167px;
@@ -524,16 +582,15 @@ p {
   font-weight: bold;
 }
 
-.popgoods-item p {
+.popgoods-item del {
   font-size: 17px;
   line-height: 18px;
   background-color: var(--basic-white);
   color: var(--basic-neutral);
-  text-decoration-line: line-through;
   font-weight: bold;
 }
 
-.popgoods-item a {
+.popgoods-item p {
   font-size: 17px;
   line-height: 18px;
   background-color: var(--basic-red);
@@ -579,16 +636,14 @@ p {
   justify-content: center;
 }
 
-/* SHADOW
-.popmanufacturers-list :hover{
+.popmanufacturers-item:hover{
   box-shadow: 0px 4px 20px var(--border-popgoods);
   }
 
-.popmanufacturers-list :active{
+.popmanufacturers-item:active{
   opacity: 0.3;
   box-shadow: 0px 4px 20px var(--border-popgoods);
   }
-*/
 
 /* Services */
 
@@ -672,24 +727,24 @@ p {
 
 .top-navigation a:hover{
   text-decoration:underline;
-  background-color: var(--basic-dark);
+  background-color: inherit;
 }
 .bottom-navigation a{
   color: var(--text-footer-nav);
 }
 .bottom-navigation a:hover{
   text-decoration:underline;
-  background-color: var(--basic-dark);
+  background-color: inherit;
 }
 
 .top-navigation a:focus{
   text-decoration:underline;
-  background-color: var(--basic-dark);
+  background-color: inherit;
   opacity: 0.5;
 }
 .bottom-navigation a:focus{
   text-decoration:underline;
-  background-color: var(--basic-dark);
+  background-color: inherit;
   opacity: 0.5;
 }
 /* low-footer */
