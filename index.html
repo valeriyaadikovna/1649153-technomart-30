@@ -84,20 +84,36 @@
         </li>
         <li class="features-item features-item-gallery">
           <h3 class="visually-hidden">Фотогалерея</h3>
-          <div class="slide-box">
             <figure class="gallery-content">
-              <img src="img/pic/perforator.jpg" width="620" height="266" alt="Строитель работает перфоратором">
-              <h2>Перфораторы</h2>
-              <p>Настоящие мужские игрушки</p>
-              <a class="button button-red" href="catalog.html">Открыть каталог</a>
+              <ul class="slider-list">
+                <li class="slider-item slide slide-current">
+                  <div class="slide-box">
+                  <img src="img/pic/perforator.jpg" width="620" height="266" alt="Строитель работает перфоратором">
+                  <h2 class="slide-title">
+                    Перфораторы
+                  </h2>
+                  <p>Настоящие мужские игрушки</p>
+                  <a class="button button-red" href="catalog.html">Открыть каталог</a>
+                  </div>
+                </li>
+                <li class="slider-item slide">
+                  <div class="slide-box">
+                  <img src="img/pic/drill.jpg" width="620" height="266" alt="Строитель работает дрелью">
+                  <h2 class="slide-title">
+                    Дрели
+                  </h2>
+                  <p>Соседям на радость!</p>
+                  <a class="button button-red" href="catalog.html">Открыть каталог</a>
+                  </div>
+                </li>
+              </ul>
+              <div class="slider-controls">
+                <button class="current" type="button" aria-label="Первый слайд"></button>
+                <button type="button" aria-label="Второй слайд"></button>
+              </div>
             </figure>
-            <div class="slide-control">
-              <button class="gallery-button-back" type="button" disabled>Назад</button>
-              <button class="gallery-button-next" type="button">Вперед</button>
-            </div>
           </div>
         </li>
-      </ul>
     </section>
     <section class="popgoods container">
       <div class="popgoods-caption">
@@ -328,8 +344,10 @@
           </ul>
         </section>
         <section class="footer-copyright">
-          <p class="feedback">Обратная связь:</br><a class="button button_footer" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a></p>
-          <p class="created">Разработано —</br><a class="button button_footer" href="https://htmlacademy.ru">htmlacademy.ru</a></p>
+          <p class="feedback">Обратная связь:</br><a class="button button_footer"
+              href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a></p>
+          <p class="created">Разработано —</br><a class="button button_footer"
+              href="https://htmlacademy.ru">htmlacademy.ru</a></p>
         </section>
       </div>
     </div>
