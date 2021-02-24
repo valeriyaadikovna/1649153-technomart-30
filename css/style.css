@@ -332,21 +332,21 @@ input[type="search"] {
   background-color: var(--basic-white);
   width: 940px;
   margin: 0 auto;
-  padding-top: 42px;
+  padding-top: 41px;
+  padding-bottom: 40px;
   background-color: var(--basic-blue);
 }
 
-.tagline p{
+.tagline {
   font-size: 16px;
   line-height: 23px;
   font-style: italic;
-  margin: 37.5px 0 44.5px 30px;
+  padding-left: 25px;
   color: var(--basic-red);
 }
 
 .contact {
   justify-self: center;
-  margin-top: 46px;
 }
 
 .contact-phone {
@@ -388,7 +388,7 @@ input[type="search"] {
 .profile {
   display: flex;
   flex-wrap: wrap;
-  width: 300px
+  width: 300px;
 }
 
 .accaunt {
@@ -402,8 +402,6 @@ input[type="search"] {
   font-size: 21px;
   line-height: 21px;
   color: var(--basic-black);
-  margin-bottom: 7px;
-  margin-top: 46px;
 }
 
 .accaunt::before {
@@ -471,8 +469,7 @@ input[type="search"] {
   align-items: center;
   justify-content: center;
   padding: 12px 27px 12px 45px;
-  margin-top: 46px;
-  margin-bottom: 67px;
+  height: 21px;
   margin-left: 19px;
   font-size: 21px;
   line-height: 21px;
@@ -498,8 +495,7 @@ input[type="search"] {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-top: 46px;
-  margin-bottom: 67px;
+  height: 21px;
   padding: 12px 24px;
   font-size: 21px;
   line-height: 21px;
