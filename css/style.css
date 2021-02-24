@@ -305,25 +305,24 @@ input[type="search"] {
 .site-navigation {
   display: flex;
   list-style: none;
-  padding-left: 53px;
-  padding-right: 53px;
+  padding: 0 53px;
+
 }
 
 .site-navigation a {
   padding: 16px 28px 20px 28px;
   color: var(--basic-white);
+  cursor: pointer;
 }
 
-/*
-.site-navigation-current a:not([href]) {
-  background-color: var(--basic-dark);
+.site-navigation :hover{
+  background-color: var(--basic-extra-dark);
 }
-
-.site-navigation a:hover,
-.site-navigation a:focus {
+.site-navigation :focus {
   background-color: var(--basic-super-dark);
+  color: rgba(255, 255, 255, 0.5)
 }
-*/
+
 /* User-navigation */
 
 .user-navigation {
@@ -333,7 +332,7 @@ input[type="search"] {
   width: 940px;
   margin: 0 auto;
   padding-top: 41px;
-  padding-bottom: 40px;
+  padding-bottom: 20px;
   background-color: var(--basic-blue);
 }
 
