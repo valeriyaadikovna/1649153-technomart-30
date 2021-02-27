@@ -459,16 +459,16 @@ input[type="search"] {
 }
 
 .orders{
-  padding: 7px 32px 46px 44px;
+  padding: 7px 32px 0 44px;
 }
 .personal-area{
-  padding: 7px 45px 42px 0;
+  padding: 7px 45px 0 0;
 }
 
 .orders::after {
   position: absolute;
   content: "";
-  top: 20%;
+  top: 50%;
   left: 88%;
   width: 4px;
   height: 4px;
@@ -559,6 +559,7 @@ input[type="search"] {
   padding: 10px 79px 10px 78px;
   font-family: PT Sans;
   font-size: 13px;
+  margin-top: 14.5px;
 }
 
 .features-button{
@@ -1357,7 +1358,7 @@ input[type="search"] {
 .breadcrumbs {
   padding: 0;
   margin: 0;
-  margin: 21px 41px;
+  margin: 21px 40px 20px 55px;
   list-style: none;
   display: flex;
   justify-content: flex-start;
@@ -1415,6 +1416,7 @@ input[type="search"] {
 .page-catalog .page-title {
   display: flex;
   justify-content: stretch;
+  margin: 0;
   margin-top: 20px;
   padding: 29px 0 30px 29px;
   align-items:center;
@@ -1444,7 +1446,6 @@ input[type="search"] {
 .catalog-item{
   position: relative;
   font-family: PT Sans;
-  width: 220px;
   min-height: 285px;
   align-items:center;
   border: 1px solid var(--border-popgoods);
@@ -1467,6 +1468,7 @@ input[type="search"] {
   line-height: 20px;
   font-weight: bold;
   margin-bottom: 7px;
+  margin-top: 8px;
 }
 
 .catalog-item del {
@@ -1475,7 +1477,6 @@ input[type="search"] {
   background-color: var(--basic-white);
   color: var(--basic-neutral);
   font-weight: bold;
-  margin-bottom: 13px;
 }
 
 .price {
@@ -1485,9 +1486,10 @@ input[type="search"] {
   color: var(--basic-white);
   font-weight: bold;
   margin-bottom: 21px;
+  margin-top: 13px;
 }
 .no-sale{
-  margin-top: 31px;
+  margin-top: 39px;
 }
 
 .catalog-item:hover{
@@ -1510,7 +1512,8 @@ input[type="search"] {
 
 .catalog-info p{
   font-family: PT Sans;
-  margin-top: 25px;
+  margin: 0;
+  padding-top: 25px;
 }
 
 /* Pagination */
@@ -1575,14 +1578,9 @@ input[type="search"] {
   font-family: PT Sans;
 }
 
-.filter-item{
-  margin: 0;
-  padding: 0;
-  border: none;
-}
-
 .range-filter {
   width: 220px;
+  margin-top: 10px;
 }
 .filter-item legend {
   font-size: 17px;
@@ -1665,12 +1663,7 @@ input[type="search"] {
 .filter fieldset {
   padding: 0;
   margin: 0;
-  margin-bottom: 46px;
   border: none;
-}
-
-.filter fieldset:first-child {
-  margin-bottom: 42px;
 }
 
 .filter-option label {
@@ -1681,7 +1674,7 @@ input[type="search"] {
 }
 
 .filter legend {
-  margin-bottom: 15px;
+  margin: 0;
   font-size: 17px;
   line-height: 30px;
   text-transform: uppercase;
@@ -1696,14 +1689,27 @@ input[type="search"] {
 
 .manufactor-filter{
   padding-top: 16px;
+  padding-bottom: 5px;
   border-top: 1px solid var(--basic-extra-light);
   border-bottom: 1px solid var(--basic-extra-light);
+  margin-top: 25px;
+  margin-bottom: 18px;
+}
+
+.checkbox-filter{
+  margin: 0;
+  margin-top: 17.5px;
+  padding-right: 8px;
 }
 
 .checkbox-filter li{
   margin-bottom: 20px;
 }
 
+.power {
+  margin: 0;
+  margin-top: 23px;
+}
 .filter-radio{
   margin-bottom: 22.5px;
 }
@@ -1712,7 +1718,6 @@ input[type="search"] {
   align-items: center;
   justify-content: space-between;
   padding: 10px 0 10px 18px;
-
   background-color: var(--popular-goods-background);
   text-transform: uppercase;
   font-size: 13px;
@@ -1852,6 +1857,9 @@ input[type="search"] {
   font-size: 13px;
   line-height: 18px;
   text-transform: uppercase;
+  margin: 0;
+  margin-top: 20px;
+  margin-bottom: 15px;;
 }
 
 .filter-input-checkbox:hover + label,
