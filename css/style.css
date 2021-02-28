@@ -1020,6 +1020,7 @@ input[type="search"] {
   margin: 0;
   padding-top: 24px;
   font-family: PT Sans;
+  padding-bottom: 21px;
 }
 
 .service-list {
@@ -1028,7 +1029,8 @@ input[type="search"] {
   list-style: none;
   margin: 0;
   padding: 0;
-  padding-top: 70px;
+  padding-top: 49px;
+  padding-bottom: 49px;
 }
 .service-list::after {
   position: absolute;
@@ -1084,8 +1086,8 @@ input[type="search"] {
 .delivery {
   grid-column: 2/-1;
   margin-left: 80px;
-  padding-top: 67px;
-  background: url(../img/icon/delivery_truck.png) no-repeat 100% 87px;
+  padding-top: 46px;
+  background: url(../img/icon/delivery_truck.png) no-repeat 100% 67px;
 }
 
 .delivery-slide {
