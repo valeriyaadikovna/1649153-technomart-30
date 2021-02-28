@@ -189,7 +189,7 @@ input[type="search"] {
 
 .bookmark {
   position: relative;
-  padding: 9px 24px 9px 50px;
+  padding: 9px 24px 9px 42px;
   width: 86px;
   font-size: 18px;
   line-height: 24px;
@@ -1027,6 +1027,16 @@ input[type="search"] {
   padding: 0;
   padding-top: 70px;
 }
+.service-list::after {
+  position: absolute;
+  content: "";
+  height: 100%;
+  width: 20px;
+  left: 230px;
+  top: 0px;
+  background: url(../img/icon/service-shadow.png) no-repeat;
+  z-index: 1;
+}
 
 .service-item {
   display: flex;
@@ -1080,17 +1090,6 @@ input[type="search"] {
   margin: 0;
   padding-top: 30px;
 
-}
-
-.service-list::after {
-  position: absolute;
-  content: "";
-  height: 100%;
-  width: 20px;
-  left: 230px;
-  top: 0px;
-  background: url(../img/icon/service-shadow.png) no-repeat;
-  z-index: 1;
 }
 
 /* Сompany */
