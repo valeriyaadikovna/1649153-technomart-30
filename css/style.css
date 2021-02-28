@@ -82,12 +82,14 @@ p {
   line-height: 30px;
   text-transform: uppercase;
   color: var(--basic-dark);
+  letter-spacing: -0.9px;
   margin: 0;
   padding: 0;
 }
 
 .h2-black {
   color: var(--basic-black);
+  letter-spacing: -0.9px;
 }
 
 .visually-hidden {
