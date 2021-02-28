@@ -168,11 +168,14 @@ input[type="search"] {
   font-size: 18px;
   line-height: 24px;
   cursor: pointer;
-  color: var(--basic-white);
+  color: var(--basic-black);
   background-color: inherit;
 }
 .search-form{
   position: relative;
+}
+.searching::placeholder {
+  color: var(--basic-white);
 }
 
 .search-form::before {
