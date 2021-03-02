@@ -82,38 +82,38 @@
         </li>
         <li class="features-item features-item-gallery">
           <h3 class="visually-hidden">Фотогалерея</h3>
-            <figure class="gallery-content">
-              <ul class="slider-list list-reset">
-                <li class="slider-item slide slide-current">
-                  <div class="slide-box">
+          <figure class="gallery-content">
+            <ul class="slider-list list-reset">
+              <li class="slider-item slide slide-current">
+                <div class="slide-box">
                   <img src="img/pic/perforator.jpg" width="620" height="266" alt="Строитель работает перфоратором">
                   <h2 class="slide-title">
                     Перфораторы
                   </h2>
                   <p>Настоящие мужские игрушки</p>
                   <a class="button button-red" href="catalog.html">Открыть каталог</a>
-                  </div>
-                </li>
-                <li class="slider-item slide">
-                  <div class="slide-box">
+                </div>
+              </li>
+              <li class="slider-item slide">
+                <div class="slide-box">
                   <img src="img/pic/drill.jpg" width="620" height="266" alt="Строитель работает дрелью">
                   <h2 class="slide-title">
                     Дрели
                   </h2>
                   <p>Соседям на радость!</p>
                   <a class="button button-red" href="catalog.html">Открыть каталог</a>
-                  </div>
-                </li>
-              </ul>
-              <div class="slider-controls">
-                <button class="current" type="button" aria-label="Первый слайд"></button>
-                <button type="button" aria-label="Второй слайд"></button>
-              </div>
-              <div class="slider-controls-arrow">
-                <button class="button-left current" type="button" aria-label="Первый слайд"></button>
-                <button class="button-right" type="button" aria-label="Второй слайд"></button>
-              </div>
-            </figure>
+                </div>
+              </li>
+            </ul>
+            <div class="slider-controls">
+              <button class="current" type="button" aria-label="Первый слайд"></button>
+              <button type="button" aria-label="Второй слайд"></button>
+            </div>
+            <div class="slider-controls-arrow">
+              <button class="button-left current" type="button" aria-label="Первый слайд"></button>
+              <button class="button-right" type="button" aria-label="Второй слайд"></button>
+            </div>
+          </figure>
           </div>
         </li>
     </section>
@@ -191,7 +191,7 @@
         </li>
         <li class="popmanufacturers-item">
           <a href="#">
-          <img src="img/pic/DeWALT.png" width="146" height="44" alt="DeWalt">
+            <img src="img/pic/DeWALT.png" width="146" height="44" alt="DeWalt">
           </a>
         </li>
         <li class="popmanufacturers-item">
@@ -260,10 +260,12 @@
     <div class="company container">
       <section class="info">
         <h2 class="h2 h2-black">КОМПАНИЯ «Техномарт»</h2>
-        <p class="shopping">Настоящий мужской шоппинг начинается здесь! Огромный выбор товаров для</br> ремонта и строительства не
+        <p class="shopping">Настоящий мужской шоппинг начинается здесь! Огромный выбор товаров для</br> ремонта и
+          строительства не
           оставит
           равнодушными любителей сэкономить на</br> гастарбайтерах.</p>
-        <p class="transportation"> Мы можем доставить ваш товар в самые отдаленные точки России!</br>Техномарт работает со многими транспортными компаниями:</p>
+        <p class="transportation"> Мы можем доставить ваш товар в самые отдаленные точки России!</br>Техномарт работает
+          со многими транспортными компаниями:</p>
         <ul class="info-list">
           <li class="info-item">Деловые линии</li>
           <li class="info-item">Автотрейдинг</li>
@@ -357,28 +359,36 @@
       </div>
     </div>
   </footer>
-  <!--
-  <section class="modal-letter">
-    <h2>Отправка письма</h2>
+  <section class="modal modal-letter">
+    <h2 class="visually-hidden">Отправка письма</h2>
     <form class="letter-form" action="https://echo.htmlacademy.ru" method="post">
-      <label for="name-name">Ваше имя:</label>
-      <input class="input input-name" id="name-name" type="text" name="name" placeholder="Имя Фамилия">
-      <p><label for="e-mail-e-mail">Ваш e-mail:</label>
-        <input class="input input-e-mail" id="e-mail-e-mail" type="email" name="e-mail" placeholder="email@example.com">
-      </p>
-      <p><label for="message-message">Текст письма:</label>
-        <textarea class="input input-textarea" id="message-message" rows="3" name="message"
-          placeholder="В свободной форме"></textarea>
-      </p>
-      <p><button class="button button-red" type="submit">Отправить</button></p>
+      <div class="write-us">
+        <div class="top-write-us">
+          <div class="write">
+            <label for="name-name">Ваше имя:</label>
+            <input class="input input-name" id="name-name" type="text" name="name" placeholder="Имя Фамилия">
+          </div>
+          <div class="write">
+            <label for="e-mail-e-mail">Ваш e-mail:</label>
+            <input class="input input-e-mail" id="e-mail-e-mail" type="email" name="e-mail"
+              placeholder="email@example.com">
+          </div>
+        </div>
+          <label for="message-message">Текст письма:</label>
+          <textarea class="input input-textarea" id="message-message" rows="3" name="message"
+            placeholder="В свободной форме"></textarea>
+      </div>
+      <div class="send-us">
+        <button class="button button-red modal-button" type="submit">Отправить</button>
+      </div>
     </form>
-    <button class="modal-close">Закрыть</button>
+    <button class="modal-close" type="button" aria-label="Закрыть"></button>
   </section>
-  <section class="modal-map">
+
+  <section class="modal modal-map">
     <h2>Как до нас добраться</h2>
     <button class="modal-close" type="button">Закрыть</button>
   </section>
--->
 </body>
 
 </html>
