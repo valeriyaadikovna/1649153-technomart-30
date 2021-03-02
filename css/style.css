@@ -1058,6 +1058,7 @@ input[type="search"] {
   color: var(--basic-white);
   text-transform: none;
   padding: 13.5px 139px 17.5px 22px;
+  width: 100%
 }
 
 .service a:hover{
