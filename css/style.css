@@ -1871,6 +1871,7 @@ input[type="search"] {
 
 .modal {
   position: fixed;
+  display: none;
   top: 0;
   right: 0;
   bottom: 0;
@@ -1988,7 +1989,16 @@ input[type="search"] {
 /* Modal map */
 
 .modal-map {
-  display: none;
+  width: 943px;
+  height: 449px;
+  border-top: 7px solid var(--basic-red);
+}
+
+.modal-map img {
+  display: block;
+}
+.modal-map iframe {
+  border: none;
 }
 
 
