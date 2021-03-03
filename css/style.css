@@ -1871,11 +1871,9 @@ input[type="search"] {
 
 .modal {
   position: fixed;
-  display: none;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   font-size: 18px;
   line-height: 24px;
   margin: auto;
@@ -1911,8 +1909,6 @@ input[type="search"] {
 }
 
 .modal-letter {
-  top: auto;
-  bottom: 52px;
   width: 620px;
 }
 
@@ -1975,6 +1971,10 @@ input[type="search"] {
   display: flex;
   justify-content: center;
   align-items: center;
+  padding-left: 80px;
+  padding-right: 80px;
+  margin-left: -80px;
+  margin-right: -80px;
   height: 112px;
   background-color: var(--letter-form-background);
   margin-top: 37px;
@@ -1992,6 +1992,7 @@ input[type="search"] {
   width: 943px;
   height: 449px;
   border-top: 7px solid var(--basic-red);
+  display: none;
 }
 
 .modal-map img {
