@@ -366,13 +366,17 @@
       </div>
     </div>
   </footer>
-  <section class="modal-book">
+  <section class="modal modal-book">
     <form class="book-form">
-      <h2>Товар добавлен в корзину!</h2>
-      <button class="button button-red" type="submit">ОФОРМИТЬ ЗАКАЗ</button>
-      <button class="button" type="button">ПРОДОЛЖИТЬ ПОКУПКИ</button>
+      <div class="message">
+        <h2>Товар добавлен в корзину!</h2>
+      </div>
+      <div class="buttons">
+        <button class="button button-red modal-button-book" type="submit">ОФОРМИТЬ ЗАКАЗ</button>
+        <button class="button modal-button-continue" type="button">ПРОДОЛЖИТЬ ПОКУПКИ</button>
+        </div>
     </form>
-    <button class="modal-close" type="button">Закрыть</button>
+    <button class="modal-close" type="button" aria-label="Закрыть"></button>
   </section>
 </body>
 </html>

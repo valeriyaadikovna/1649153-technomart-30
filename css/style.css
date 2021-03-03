@@ -1991,7 +1991,6 @@ input[type="search"] {
 .modal-map {
   width: 943px;
   height: 449px;
-  border-top: 7px solid var(--basic-red);
   display: none;
 }
 
@@ -2002,8 +2001,60 @@ input[type="search"] {
   border: none;
 }
 
+/* Modal book */
 
+.modal-book {
+  width: 620px;
+  height: 275px;
+}
 
+.book-form {
+  padding: 48px 81px;
+}
 
+.book-form h2 {
+  font-size: 24px;
+  line-height: 30px;
+}
+.message {
+  display: flex;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 50px;
+}
 
+.message::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0px;
+  width: 66px;
+  height: 66px;
+  background-image: url("../img/icon/icon-mark-ok.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
 
+.buttons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--letter-form-background);
+  padding-left: 81px;
+  padding-right: 81px;
+  margin-left: -81px;
+  margin-right: -81px;
+  height: 112px;
+}
+
+.modal-button-continue {
+  padding: 11px 31px 9px 32px;
+  margin:0;
+}
+
+.modal-button-book {
+  padding: 11px 46px 9px 47px;
+  margin:0;
+  margin-right: 10px;
+}
