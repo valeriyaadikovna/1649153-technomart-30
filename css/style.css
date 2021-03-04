@@ -1095,7 +1095,7 @@ input[type="search"] {
   font-family: PT Sans;
   margin: 0;
   padding-top: 30px;
-
+  padding-right: 340px;
 }
 
 /* Сompany */
@@ -1124,6 +1124,7 @@ input[type="search"] {
   font-family: PT Sans;
   padding-top: 24px;
   padding-bottom: 32px;
+  padding-right: 85px;
   margin: 0;
 }
 
