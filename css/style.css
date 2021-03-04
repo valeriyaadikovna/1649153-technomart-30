@@ -1012,7 +1012,7 @@ input[type="search"] {
   display: grid;
   grid-template-columns: 240px 350px 350px;
   padding-top: 64px;
-  padding-bottom: 99px;
+  padding-bottom: 50px;
 }
 
 .about-service {
