@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html class="page" lang="ru">
+
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Техномарт</title>
@@ -92,29 +93,38 @@
               <fieldset>
                 <legend>Производители:</legend>
                 <ul class="checkbox-filter">
-                  <li class="filter-option filter-checkbox">
-                    <input class="filter-input-checkbox filter-input visually-hidden" type="checkbox" name="BOSCH"
-                      id="BOSCH" checked>
-                    <label for="BOSCH">BOSCH</label>
+                  <li class="filter-option">
+                    <div class="filter-checkbox">
+                      <input class="filter-input-checkbox filter-input visually-hidden" type="checkbox" name="BOSCH"
+                        id="BOSCH" checked>
+                      <label for="BOSCH">BOSCH</label>
+                    </div>
                   </li>
-                  <li class="filter-option filter-checkbox">
-                    <input class="filter-input-checkbox filter-input visually-hidden" type="checkbox" name="INTERSKOL"
-                      id="INTERSKOL">
-                    <label for="INTERSKOL">ИНТЕРСКОЛ</label>
-                  <li class="filter-option filter-checkbox">
-                    <input class="filter-input-checkbox filter-input visually-hidden" type="checkbox" name="MAKITA"
-                      id="MAKITA" checked>
-                    <label for="MAKITA">MAKITA</label>
+                  <li class="filter-option">
+                    <div class="filter-checkbox">
+                      <input class="filter-input-checkbox filter-input visually-hidden" type="checkbox" name="INTERSKOL"
+                        id="INTERSKOL">
+                      <label for="INTERSKOL">ИНТЕРСКОЛ</label>
+                  <li class="filter-option">
+                    <div class="filter-checkbox">
+                      <input class="filter-input-checkbox filter-input visually-hidden" type="checkbox" name="MAKITA"
+                        id="MAKITA" checked>
+                      <label for="MAKITA">MAKITA</label>
+                    </div>
                   </li>
-                  <li class="filter-option filter-checkbox">
-                    <input class="filter-input-checkbox filter-input visually-hidden" type="checkbox" name="DEWALT"
-                      id="DEWALT">
-                    <label for="DEWALT">DEWALT</label>
+                  <li class="filter-option">
+                    <div class="filter-checkbox">
+                      <input class="filter-input-checkbox filter-input visually-hidden" type="checkbox" name="DEWALT"
+                        id="DEWALT">
+                      <label for="DEWALT">DEWALT</label>
+                    </div>
                   </li>
-                  <li class="filter-option filter-checkbox">
-                    <input class="filter-input-checkbox filter-input visually-hidden" type="checkbox" name="HITACHI"
-                      id="HITACHI">
-                    <label for="HITACHI">HITACHI</label>
+                  <li class="filter-option">
+                    <div class="filter-checkbox">
+                      <input class="filter-input-checkbox filter-input visually-hidden" type="checkbox" name="HITACHI"
+                        id="HITACHI">
+                      <label for="HITACHI">HITACHI</label>
+                    </div>
                   </li>
                 </ul>
               </fieldset>
@@ -122,15 +132,19 @@
             <fieldset>
               <legend>Питание:</legend>
               <ul class="power">
-                <li class="filter-option filter-radio">
-                  <input class="filter-input-radio filter-input visually-hidden" type="radio" name="power"
-                    value="battery" id="filter-battery" checked>
-                  <label for="filter-battery">Аккумуляторные</label>
+                <li class="filter-option">
+                  <div class="filter-radio">
+                    <input class="filter-input-radio filter-input visually-hidden" type="radio" name="power"
+                      value="battery" id="filter-battery" checked>
+                    <label for="filter-battery">Аккумуляторные</label>
+                  </div>
                 </li>
-                <li class="filter-option filter-radio">
-                  <input class="filter-input-radio filter-input visually-hidden" type="radio" name="power"
-                    value="network" id="filter-network">
-                  <label for="filter-network">Сетевые</label>
+                <li class="filter-option">
+                  <div class="filter-radio">
+                    <input class="filter-input-radio filter-input visually-hidden" type="radio" name="power"
+                      value="network" id="filter-network">
+                    <label for="filter-network">Сетевые</label>
+                  </div>
                 </li>
               </ul>
             </fieldset>
@@ -142,7 +156,7 @@
             <section class="sort">
               <h2>Сортировка:</h2>
               <ul class="sort-values">
-                <li><a class="coast" href="#">ПО ЦЕНЕ</a></li>
+                <li class="values-current"><a class="coast" href="#">ПО ЦЕНЕ</a></li>
                 <li><a class="type" href="#">ПО ТИПУ</a></li>
                 <li><a class="functional" href="#">ПО ФУНКЦИОНАЛУ</a></li>
               </ul>
@@ -263,8 +277,8 @@
               </li>
             </ul>
             <ul class="pagination-list">
-              <li class="pagination-item">
-                <a class=pagination-link>1</a>
+              <li class="pagination-item-current">
+                <a class="pagination-link-current">1</a>
               </li>
               <li class="pagination-item">
                 <a class="pagination-link" href="#">2</a>
@@ -374,9 +388,10 @@
       <div class="buttons">
         <button class="button button-red modal-button-book" type="submit">ОФОРМИТЬ ЗАКАЗ</button>
         <button class="button modal-button-continue" type="button">ПРОДОЛЖИТЬ ПОКУПКИ</button>
-        </div>
+      </div>
     </form>
     <button class="modal-close" type="button" aria-label="Закрыть"></button>
   </section>
 </body>
+
 </html>
