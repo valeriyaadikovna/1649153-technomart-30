@@ -171,39 +171,20 @@ input[type="search"] {
   line-height: 24px;
   cursor: pointer;
   color: var(--basic-black);
-  background-color: inherit;
+  background: var(--basic-extra-dark) url(../img/icon/icon-search.svg) no-repeat 17px 12px;
 }
-.search-form{
-  position: relative;
-}
+
 .searching::placeholder {
   color: var(--basic-white);
 }
 
-.search-form::before {
-  content: "";
-  position: absolute;
-  top: 13px;
-  left: 19px;
-  width: 17px;
-  height: 17px;
-  background-image: url("../img/icon/icon-search.svg");
-  background-repeat: no-repeat;
-  background-position: 0 0;
+.search-form input[type="search"]:hover{
+  background: var(--basic-extra-dark) url(../img/icon/icon-search-hover.svg) no-repeat 17px 12px;
 }
-
-.search-form:hover::before{
-  background-image: url("../img/icon/icon-search-hover.svg");
-}
-.search-form:active::before,
-.search-form:focus::before{
-  background-image: url("../img/icon/icon-search-focus.svg");
-}
-
-.search-form:active,
-.search-form:focus {
+.search-form input[type="search"]:active,
+.search-form input[type="search"]:focus{
   color: var(--basic-black);
-  background-color: var(--basic-white);
+  background: var(--basic-white) url(../img/icon/icon-search-focus.svg) no-repeat 17px 12px;
 }
 
 .bookmark {
@@ -1681,7 +1662,7 @@ input[type="search"] {
   border-color: var(--basic-extra-light);
 }
 
-.pagination-item:focus {
+.pagination-item:active {
   border-color: var(--basic-red);
 }
 
