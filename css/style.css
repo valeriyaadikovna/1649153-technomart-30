@@ -798,6 +798,10 @@ input[type="search"] {
   margin: 0;
 }
 
+.list-reset li {
+
+}
+
 /* Gallery */
 
 .gallery-content{
@@ -824,7 +828,7 @@ input[type="search"] {
   background-color: var(--basic-red);
   border: 2px solid var(--basic-white);
   border-radius: 50%;
-  cursor: pointer;
+  outline: none;
 }
 
 .slider-controls-arrow {
@@ -845,6 +849,7 @@ input[type="search"] {
   background: url("../img/icon/icon-left.svg") no-repeat;
   border: none;
   cursor: pointer;
+  outline: none;
 }
 
 .button-right {
