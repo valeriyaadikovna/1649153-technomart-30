@@ -2051,6 +2051,7 @@ input[type="search"] {
   display: none;
 }
 
+
 /* Modal close */
 
 .modal-close {
@@ -2075,6 +2076,48 @@ input[type="search"] {
 
 .modal-letter {
   width: 620px;
+
+}
+/* Animations */
+
+@keyframes bounce {
+  0% {
+    transform: translate(-50%,-2000px);
+}
+  100% {
+  transform: translate(-50%,-50%);
+  }
+}
+
+.modal-show {
+  display: block;
+  animation: bounce 0.6s;
+}
+
+.modal-error {
+  animation: shake 0.6s;
+}
+
+@keyframes shake {
+  0%,
+  100% {
+    transform: translate(-50%,-50%);
+  }
+
+  10%,
+  30%,
+  50%,
+  70%,
+  90% {
+    transform: translate(-52%,-50%);
+  }
+
+  20%,
+  40%,
+  60%,
+  80% {
+    transform: translate(-48%,-50%);
+  }
 }
 
 .top-write-us {
@@ -2104,6 +2147,7 @@ input[type="search"] {
   height: 22px;
   padding: 7px 0 7px 12px;
 }
+
 .input-textarea {
   width: 444px;
   height: 103.5px;
@@ -2128,7 +2172,6 @@ input[type="search"] {
   padding: 11px 199px 9px 199px;
   margin: 37px 80px;
 }
-
 
 /* Modal map */
 
@@ -2194,10 +2237,12 @@ input[type="search"] {
 .modal-button-continue {
   padding: 11px 31px 9px 32px;
   margin:0;
+  cursor: pointer;
 }
 
 .modal-button-book {
   padding: 11px 46px 9px 47px;
   margin:0;
   margin-right: 10px;
+  cursor: pointer;
 }
