@@ -1196,6 +1196,7 @@ input[type="search"] {
   margin-bottom: 70px;
 }
 
+
 .service {
   display: grid;
   grid-template-columns: 240px 350px 350px;
@@ -1265,10 +1266,21 @@ input[type="search"] {
   text-transform: none;
 }
 
-.delivery {
+.service-one {
   grid-column: 2/-1;
   margin-left: 80px;
   padding-top: 46px;
+}
+
+.delivery {
+  background: url(../img/icon/delivery_truck.png) no-repeat 100% 67px;
+}
+
+.warranty {
+  background: url(../img/icon/delivery_truck.png) no-repeat 100% 67px;
+}
+
+.delivery {
   background: url(../img/icon/delivery_truck.png) no-repeat 100% 67px;
 }
 

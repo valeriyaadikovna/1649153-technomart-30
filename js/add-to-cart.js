@@ -1,11 +1,13 @@
-const cartLink = document.querySelector(".button--icon-start");
+const cartLinks = document.querySelectorAll(".button--icon-start");
 const cartPopup = document.querySelector(".modal-book");
 const cartClose = cartPopup.querySelector(".modal-close");
 const cartContinue = cartPopup.querySelector(".modal-button-continue");
 
-cartLink.addEventListener("click", function (evt) {
-  evt.preventDefault();
-  cartPopup.classList.add("modal-show");
+cartLinks.forEach(function(elem) {
+  elem.addEventListener("click", function (evt) {
+    evt.preventDefault();
+    cartPopup.classList.add("modal-show");
+  });
 });
 
 cartClose.addEventListener("click", function (evt) {
