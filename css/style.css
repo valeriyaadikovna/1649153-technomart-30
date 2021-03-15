@@ -1266,7 +1266,7 @@ input[type="search"] {
   text-transform: none;
 }
 
-.service-one {
+.service-info {
   grid-column: 2/-1;
   margin-left: 80px;
   padding-top: 46px;
@@ -1276,19 +1276,29 @@ input[type="search"] {
   background: url(../img/icon/delivery_truck.png) no-repeat 100% 67px;
 }
 
-.warranty {
-  background: url(../img/icon/delivery_truck.png) no-repeat 100% 67px;
+.guarantee {
+  background: url(../img/pic/medal.png) no-repeat 100% 45px;
 }
 
-.delivery {
-  background: url(../img/icon/delivery_truck.png) no-repeat 100% 67px;
+.credit {
+  background: url(../img/pic/credit.png) no-repeat 100% 45px;
 }
 
-.delivery-slide {
+.delivery-slide,
+.guarantee-slide,
+.credit-slide {
   font-family: PT Sans;
   margin: 0;
   padding-top: 30px;
-  padding-right: 340px;
+  padding-right: 200px;
+}
+.guarantee-slide {
+  padding-top: 24.5px;
+}
+.credit-button {
+  padding: 10px 9px 10px 8px;
+  margin-top: 26.5px;
+  width: 175px;
 }
 
 /* Сompany */
