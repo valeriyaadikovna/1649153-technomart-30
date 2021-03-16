@@ -349,7 +349,7 @@ input[type="search"] {
 .site-navigation {
   display: flex;
   list-style: none;
-  padding: 0 53px;
+  padding: 0;
 }
 
 .site-navigation a {
