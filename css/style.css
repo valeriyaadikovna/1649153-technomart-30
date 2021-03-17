@@ -798,9 +798,6 @@ input[type="search"] {
   margin: 0;
 }
 
-.list-reset li {
-
-}
 
 /* Gallery */
 
@@ -810,6 +807,7 @@ input[type="search"] {
   height: 266px;
   margin: 0;
   z-index: 1;
+  margin-right: 10px;
 }
 .slider-controls {
   position: absolute;
