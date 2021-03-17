@@ -1,49 +1,92 @@
-const sliderContainer = document.querySelector(".slider-list");
-const sliderControls = document.querySelector(".slider-controls");
-const arrowLeft = document.querySelector(".button-left");
-const arrowRight = document.querySelector(".button-right");
+const slider = document.querySelector('.gallery-content');
 
-let slide = sliderContainer.querySelector('.slide-current');
-let radioSlide = sliderControls.querySelector('button.current');
+if (slider) {
+  let activeSlideIndex = 0;
+  const slides = Array.from(slider.querySelectorAll('.slider-item'));
+  const dots = Array.from(slider.querySelectorAll('.slider-controls button'));
+  const sliderArrowPrev = slider.querySelector('.button-left');
+  const sliderArrowNext = slider.querySelector('.button-right');
 
-arrowLeft.addEventListener("click", function (evt) {
-  evt.preventDefault();
-  let newSlide = slide.previousElementSibling;
-  if (newSlide == null) {
-    return;
+  const disabledArrow = () => {
+    if (Number(activeSlideIndex) === 0) {
+      sliderArrowNext.removeAttribute('disabled');
+      sliderArrowPrev.setAttribute('disabled', '');
+    } else if (Number(activeSlideIndex) === slides.length - 1) {
+      sliderArrowPrev.removeAttribute('disabled');
+      sliderArrowNext.setAttribute('disabled', '');
+    } else {
+      sliderArrowPrev.removeAttribute('disabled');
+      sliderArrowNext.removeAttribute('disabled');
+    }
+  };
+
+  disabledArrow();
+
+  const setPrevSlide = () => {
+    if (activeSlideIndex > 0) {
+      activeSlideIndex--;
+      disabledArrow();
+
+      slides[activeSlideIndex + 1].classList.remove('slide-current');
+      slides[activeSlideIndex].classList.add('slide-current');
+      dots[activeSlideIndex + 1].classList.remove('current');
+      dots[activeSlideIndex].classList.add('current');
+    }
   }
-  slide.classList.remove("slide-current");
-  slide = newSlide;
-  slide.classList.add("slide-current");
-  radioSlide.classList.remove("current");
-  radioSlide = radioSlide.previousElementSibling;
-  radioSlide.classList.add("current");
-});
 
-arrowRight.addEventListener("click", function (evt) {
-  evt.preventDefault();
-  let newSlide = slide.nextElementSibling;
-  if (newSlide == null) {
-    return;
-  }
-  slide.classList.remove("slide-current");
-  slide = newSlide;
-  slide.classList.add("slide-current");
-  radioSlide.classList.remove("current");
-  radioSlide = radioSlide.nextElementSibling;
-  radioSlide.classList.add("current")
-});
+  const setNextSlide = () => {
+    if (activeSlideIndex < slides.length - 1) {
+      activeSlideIndex++;
+      disabledArrow();
 
-arrowLeft.addEventListener("click", function (evt) {
-  evt.preventDefault();
-  let newSlide = slide.previousElementSibling;
-  if (newSlide == null) {
-    return;
+      slides[activeSlideIndex - 1].classList.remove('slide-current');
+      slides[activeSlideIndex].classList.add('slide-current');
+      dots[activeSlideIndex - 1].classList.remove('current');
+      dots[activeSlideIndex].classList.add('current');
+    }
   }
-  slide.classList.remove("slide-current");
-  slide = newSlide;
-  slide.classList.add("slide-current");
-  radioSlide.classList.remove("current");
-  radioSlide = radioSlide.previousElementSibling;
-  radioSlide.classList.add("current");
-});
+
+  const setSlideByDot = () => {
+    disabledArrow();
+
+    slides.forEach((slide) => {
+      slide.classList.remove('slide-current')
+    });
+
+    dots.forEach((dot) => {
+      dot.classList.remove('current');
+    });
+
+    slides[activeSlideIndex].classList.add('slide-current');
+    dots[activeSlideIndex].classList.add('current');
+  }
+
+  const setActiveSlider = (mode) => {
+    switch (mode) {
+      case 'PREV':
+        setPrevSlide();
+        break;
+      case 'NEXT':
+        setNextSlide();
+        break;
+      case 'DOTS':
+        setSlideByDot();
+        break;
+    }
+  };
+
+  sliderArrowPrev.addEventListener('click', () => {
+    setActiveSlider('PREV');
+  });
+
+  sliderArrowNext.addEventListener('click', () => {
+    setActiveSlider('NEXT');
+  });
+
+  dots.forEach((dot) => {
+    dot.addEventListener('click', () => {
+      activeSlideIndex = dot.dataset.slide
+      setActiveSlider('DOTS');
+    });
+  })
+}
