@@ -350,11 +350,10 @@ input[type="search"] {
 .site-navigation {
   display: flex;
   flex-wrap: wrap;
-  list-style: none;
-  padding: 0;
 }
 
 .site-navigation a {
+  display: inline-flex;
   padding: 16px 28px 20px 28px;
   color: var(--basic-white);
   cursor: pointer;
@@ -1308,6 +1307,9 @@ input[type="search"] {
   margin-left: 80px;
   padding-top: 46px;
 }
+.service-info h2 {
+  padding-right: 250px;
+}
 
 .delivery {
   background: url(../img/icon/truck.png) no-repeat 100% 67px;
@@ -1327,7 +1329,7 @@ input[type="search"] {
   font-family: "PT Sans", Arial, sans-serif;
   margin: 0;
   padding-top: 30px;
-  padding-right: 200px;
+  padding-right: 250px;
 }
 .guarantee-slide {
   padding-top: 24.5px;
@@ -1683,24 +1685,7 @@ input[type="search"] {
   margin-top: 48px;
 }
 
-.pagination-link {
-  color: var(--basic-black);
-}
-
-.pagination-item {
-  display: block;
-  padding: 10px 15px;
-  margin-right: 10px;
-  font-size: 13px;
-  line-height: 18px;
-  font-family: "PT Sans", Arial, sans-serif;
-  background-color: var(--basic-white);
-  border: 1px solid var(--basic-border);
-  box-sizing: border-box;
-  border-radius: 2px;
-  cursor: pointer;
-}
-.pagination-item-current {
+.pagination-link-current {
   display: block;
   padding: 10px 15px;
   margin-right: 10px;
@@ -1708,22 +1693,35 @@ input[type="search"] {
   line-height: 18px;
   font-family: "PT Sans", Arial, sans-serif;
   background-color: var(--basic-red);
+  color: var(--basic-white);
   border: none;
 }
-.pagination-link-current {
-  color: var(--basic-white);
+
+.pagination-link {
+  display: block;
+  padding: 10px 15px;
+  margin-right: 10px;
+  font-size: 13px;
+  line-height: 18px;
+  font-family: "PT Sans", Arial, sans-serif;
+  background-color: var(--basic-white);
+  color: var(--basic-black);
+  border: 1px solid var(--basic-border);
+  box-sizing: border-box;
+  border-radius: 2px;
+  cursor: pointer;
 }
 
-.pagination-item:last-child {
+.pagination-item li:last-child {
   margin-right: 0;
   padding: 10px 31px 10px 32px;
 }
 
-.pagination-item:hover {
+.pagination-link:hover {
   border-color: var(--basic-extra-light);
 }
 
-.pagination-item:active {
+.pagination-link:active {
   border-color: var(--basic-red);
 }
 
@@ -2265,8 +2263,8 @@ input[type="search"] {
 .letter-form textarea:hover,
 .letter-form textarea:focus,
 .letter-form input:focus {
-  background-color: var(--letter-form-background);
-  border: 2px solid var(--basic-dark);
+  background-color: var(--basic-white);
+  border: 2px solid var(--basic-red);
 }
 
 /* Modal map */
