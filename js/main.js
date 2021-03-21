@@ -35,87 +35,96 @@ window.addEventListener("keydown", function (evt) {
 
 const letterLink = document.querySelector(".letter");
 const letterPopup = document.querySelector(".modal-letter");
-const letterClose = letterPopup.querySelector(".modal-close");
-const letterForm = letterPopup.querySelector(".letter-form");
-const letterName = letterPopup.querySelector(".input-name");
-const letterEmail = letterPopup.querySelector(".input-e-mail");
-const letterText = letterPopup.querySelector(".input-textarea");
 
-let isStorageSupport = true;
-let storage = "";
+if (letterPopup) {
+  const letterClose = letterPopup.querySelector(".modal-close");
+  const letterForm = letterPopup.querySelector(".letter-form");
+  const letterName = letterPopup.querySelector(".input-name");
+  const letterEmail = letterPopup.querySelector(".input-e-mail");
+  const letterText = letterPopup.querySelector(".input-textarea");
 
-try {
-  storage = localStorage.getItem("name");
-} catch (err) {
-  isStorageSupport = false;
-}
+  let isStorageSupport = true;
+  let storage = "";
 
-letterLink.addEventListener("click", function (evt) {
-  evt.preventDefault();
-  letterPopup.classList.add("modal-show");
-
-  if (storage) {
-    letterName.value = storage;
-    letterEmail.focus();
-  } else {
-    letterName.focus();
+  try {
+    storage = localStorage.getItem("name");
+  } catch (err) {
+    isStorageSupport = false;
   }
-});
 
-letterClose.addEventListener("click", function (evt) {
-  evt.preventDefault();
-  letterPopup.classList.remove("modal-show");
-  letterPopup.classList.remove("modal-error");
-});
-
-letterForm.addEventListener("submit", function (evt) {
-  if (!letterName.value || !letterEmail.value || !letterText.value) {
+  letterLink.addEventListener("click", function (evt) {
     evt.preventDefault();
-    letterPopup.classList.remove("modal-error");
-    letterPopup.offsetWidth = letterPopup.offsetWidth;
-    letterPopup.classList.add("modal-error");
-  } else {
-    if (isStorageSupport) {
-      localStorage.setItem("name", letterName.value);
-    }
-  }
-});
+    letterPopup.classList.add("modal-show");
 
-window.addEventListener("keydown", function (evt) {
-  if (evt.keyCode === 27) {
-    if (letterPopup.classList.contains("modal-show")) {
+    if (storage) {
+      letterName.value = storage;
+      letterEmail.focus();
+    } else {
+      letterName.focus();
+    }
+  });
+
+  if (letterClose) {
+    letterClose.addEventListener("click", function (evt) {
       evt.preventDefault();
       letterPopup.classList.remove("modal-show");
       letterPopup.classList.remove("modal-error");
-    }
+    });
   }
-});
+
+  if (letterForm) {
+    letterForm.addEventListener("submit", function (evt) {
+      if (!letterName.value || !letterEmail.value || !letterText.value) {
+        evt.preventDefault();
+        letterPopup.classList.remove("modal-error");
+        letterPopup.offsetWidth = letterPopup.offsetWidth;
+        letterPopup.classList.add("modal-error");
+      } else {
+        if (isStorageSupport) {
+          localStorage.setItem("name", letterName.value);
+        }
+      }
+    });
+  }
+
+  window.addEventListener("keydown", function (evt) {
+    if (evt.keyCode === 27) {
+      if (letterPopup.classList.contains("modal-show")) {
+        evt.preventDefault();
+        letterPopup.classList.remove("modal-show");
+        letterPopup.classList.remove("modal-error");
+      }
+    }
+  });
+}
 
 /* Карта */
 
 const mapLink = document.querySelector(".map");
 const mapPopup = document.querySelector(".modal-map");
-const mapClose = mapPopup.querySelector(".modal-close");
 
-mapLink.addEventListener("click", function (evt) {
-  evt.preventDefault();
-  mapPopup.classList.add("modal-show");
-});
+if (mapPopup) {
+  const mapClose = mapPopup.querySelector(".modal-close");
 
-mapClose.addEventListener("click", function (evt) {
-  evt.preventDefault();
-  mapPopup.classList.remove("modal-show");
-});
+  mapLink.addEventListener("click", function (evt) {
+    evt.preventDefault();
+    mapPopup.classList.add("modal-show");
+  });
 
-window.addEventListener("keydown", function (evt) {
-  if (evt.keyCode === 27) {
-    if (mapPopup.classList.contains("modal-show")) {
-      evt.preventDefault();
-      mapPopup.classList.remove("modal-show");
+  mapClose.addEventListener("click", function (evt) {
+    evt.preventDefault();
+    mapPopup.classList.remove("modal-show");
+  });
+
+  window.addEventListener("keydown", function (evt) {
+    if (evt.keyCode === 27) {
+      if (mapPopup.classList.contains("modal-show")) {
+        evt.preventDefault();
+        mapPopup.classList.remove("modal-show");
+      }
     }
-  }
-});
-
+  });
+}
 /* Сервисы слайдер*/
 
 const serviceLinks = document.querySelectorAll(".service-list li a");
