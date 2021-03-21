@@ -5,7 +5,7 @@ const cartPopup = document.querySelector(".modal-book");
 const cartClose = cartPopup.querySelector(".modal-close");
 const cartContinue = cartPopup.querySelector(".modal-button-continue");
 
-cartLinks.forEach(function(elem) {
+cartLinks.forEach(function (elem) {
   elem.addEventListener("click", function (evt) {
     evt.preventDefault();
     cartPopup.classList.add("modal-show");
@@ -70,14 +70,13 @@ letterClose.addEventListener("click", function (evt) {
 
 letterForm.addEventListener("submit", function (evt) {
   if (!letterName.value || !letterEmail.value || !letterText.value) {
-  evt.preventDefault();
-  letterPopup.classList.remove("modal-error");
-  letterPopup.offsetWidth = letterPopup.offsetWidth;
-  letterPopup.classList.add("modal-error");
-  }
-  else {
+    evt.preventDefault();
+    letterPopup.classList.remove("modal-error");
+    letterPopup.offsetWidth = letterPopup.offsetWidth;
+    letterPopup.classList.add("modal-error");
+  } else {
     if (isStorageSupport) {
-    localStorage.setItem("name", letterName.value);
+      localStorage.setItem("name", letterName.value);
     }
   }
 });
@@ -120,51 +119,49 @@ window.addEventListener("keydown", function (evt) {
 /* Сервисы слайдер*/
 
 const serviceLinks = document.querySelectorAll(".service-list li a");
-const serviceContents =  document.querySelectorAll(".service .service-content");
+const serviceContents = document.querySelectorAll(".service .service-content");
 
-
-serviceLinks.forEach(function(elem) {
-    elem.addEventListener("click", function(evt) {
-        evt.preventDefault();
-        let listItem = this.parentNode;
-        Array.from(listItem.parentElement.children).forEach(function(el) {
-            el.classList.remove("checked");
-        });
-        listItem.classList.add("checked");
-        let listItemNumber = getIndexElement(listItem);
-        serviceContents.forEach(function(el) {
-            el.style.display = "none";
-        });
-        serviceContents[listItemNumber].style.display = "block";
+serviceLinks.forEach(function (elem) {
+  elem.addEventListener("click", function (evt) {
+    evt.preventDefault();
+    let listItem = this.parentNode;
+    Array.from(listItem.parentElement.children).forEach(function (el) {
+      el.classList.remove("checked");
     });
+    listItem.classList.add("checked");
+    let listItemNumber = getIndexElement(listItem);
+    serviceContents.forEach(function (el) {
+      el.style.display = "none";
+    });
+    serviceContents[listItemNumber].style.display = "block";
+  });
 });
 
-function getIndexElement(elem)
-{
-    return Array.from(elem.parentElement.children).indexOf(elem);
+function getIndexElement(elem) {
+  return Array.from(elem.parentElement.children).indexOf(elem);
 }
 
 /* Слайдер галереи */
 
-const slider = document.querySelector('.gallery-content');
+const slider = document.querySelector(".gallery-content");
 
 if (slider) {
   let activeSlideIndex = 0;
-  const slides = Array.from(slider.querySelectorAll('.slider-item'));
-  const dots = Array.from(slider.querySelectorAll('.slider-controls button'));
-  const sliderArrowPrev = slider.querySelector('.button-left');
-  const sliderArrowNext = slider.querySelector('.button-right');
+  const slides = Array.from(slider.querySelectorAll(".slider-item"));
+  const dots = Array.from(slider.querySelectorAll(".slider-controls button"));
+  const sliderArrowPrev = slider.querySelector(".button-left");
+  const sliderArrowNext = slider.querySelector(".button-right");
 
   const disabledArrow = () => {
     if (Number(activeSlideIndex) === 0) {
-      sliderArrowNext.removeAttribute('disabled');
-      sliderArrowPrev.setAttribute('disabled', '');
+      sliderArrowNext.removeAttribute("disabled");
+      sliderArrowPrev.setAttribute("disabled", "");
     } else if (Number(activeSlideIndex) === slides.length - 1) {
-      sliderArrowPrev.removeAttribute('disabled');
-      sliderArrowNext.setAttribute('disabled', '');
+      sliderArrowPrev.removeAttribute("disabled");
+      sliderArrowNext.setAttribute("disabled", "");
     } else {
-      sliderArrowPrev.removeAttribute('disabled');
-      sliderArrowNext.removeAttribute('disabled');
+      sliderArrowPrev.removeAttribute("disabled");
+      sliderArrowNext.removeAttribute("disabled");
     }
   };
 
@@ -175,66 +172,66 @@ if (slider) {
       activeSlideIndex--;
       disabledArrow();
 
-      slides[activeSlideIndex + 1].classList.remove('slide-current');
-      slides[activeSlideIndex].classList.add('slide-current');
-      dots[activeSlideIndex + 1].classList.remove('current');
-      dots[activeSlideIndex].classList.add('current');
+      slides[activeSlideIndex + 1].classList.remove("slide-current");
+      slides[activeSlideIndex].classList.add("slide-current");
+      dots[activeSlideIndex + 1].classList.remove("current");
+      dots[activeSlideIndex].classList.add("current");
     }
-  }
+  };
 
   const setNextSlide = () => {
     if (activeSlideIndex < slides.length - 1) {
       activeSlideIndex++;
       disabledArrow();
 
-      slides[activeSlideIndex - 1].classList.remove('slide-current');
-      slides[activeSlideIndex].classList.add('slide-current');
-      dots[activeSlideIndex - 1].classList.remove('current');
-      dots[activeSlideIndex].classList.add('current');
+      slides[activeSlideIndex - 1].classList.remove("slide-current");
+      slides[activeSlideIndex].classList.add("slide-current");
+      dots[activeSlideIndex - 1].classList.remove("current");
+      dots[activeSlideIndex].classList.add("current");
     }
-  }
+  };
 
   const setSlideByDot = () => {
     disabledArrow();
 
     slides.forEach((slide) => {
-      slide.classList.remove('slide-current')
+      slide.classList.remove("slide-current");
     });
 
     dots.forEach((dot) => {
-      dot.classList.remove('current');
+      dot.classList.remove("current");
     });
 
-    slides[activeSlideIndex].classList.add('slide-current');
-    dots[activeSlideIndex].classList.add('current');
-  }
+    slides[activeSlideIndex].classList.add("slide-current");
+    dots[activeSlideIndex].classList.add("current");
+  };
 
   const setActiveSlider = (mode) => {
     switch (mode) {
-      case 'PREV':
+      case "PREV":
         setPrevSlide();
         break;
-      case 'NEXT':
+      case "NEXT":
         setNextSlide();
         break;
-      case 'DOTS':
+      case "DOTS":
         setSlideByDot();
         break;
     }
   };
 
-  sliderArrowPrev.addEventListener('click', () => {
-    setActiveSlider('PREV');
+  sliderArrowPrev.addEventListener("click", () => {
+    setActiveSlider("PREV");
   });
 
-  sliderArrowNext.addEventListener('click', () => {
-    setActiveSlider('NEXT');
+  sliderArrowNext.addEventListener("click", () => {
+    setActiveSlider("NEXT");
   });
 
   dots.forEach((dot) => {
-    dot.addEventListener('click', () => {
-      activeSlideIndex = dot.dataset.slide
-      setActiveSlider('DOTS');
+    dot.addEventListener("click", () => {
+      activeSlideIndex = dot.dataset.slide;
+      setActiveSlider("DOTS");
     });
-  })
+  });
 }
