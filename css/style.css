@@ -68,11 +68,6 @@ img {
   width: auto;
 }
 
-p {
-  font-size: 13px;
-  line-height: 24px;
-  color: var(--basic-black);
-}
 
 .h2 {
   font-size: 30px;
@@ -423,6 +418,7 @@ input[type="search"] {
 .contact-phone {
   display: inline-block;
   position: relative;
+  vertical-align: middle;
   font-weight: bold;
   color: var(--basic-red);
   font-size: 21px;
@@ -1360,13 +1356,19 @@ input[type="search"] {
   padding-bottom: 50px;
 }
 
+.service p {
+  font-size: 13px;
+  line-height: 24px;
+  color: var(--basic-black);
+  font-family: "PT Sans", Arial, sans-serif;
+}
+
 .about-service {
   -ms-grid-column: 1;
   -ms-grid-column-span: 2;
   grid-column: 1/3;
   margin: 0;
   padding-top: 24px;
-  font-family: "PT Sans", Arial, sans-serif;
   padding-bottom: 21px;
 }
 
@@ -1454,7 +1456,6 @@ input[type="search"] {
 .delivery-slide,
 .guarantee-slide,
 .credit-slide {
-  font-family: "PT Sans", Arial, sans-serif;
   margin: 0;
   padding-top: 30px;
   padding-right: 250px;
@@ -1476,25 +1477,27 @@ input[type="search"] {
   margin-bottom: 70px;
 }
 
+.company p {
+  font-size: 13px;
+  line-height: 24px;
+  color: var(--basic-black);
+  font-family: "PT Sans", Arial, sans-serif;
+}
+
 .info .h2-black {
   padding-bottom: 24px;
 }
 
 .shopping {
-  font-family: "PT Sans", Arial, sans-serif;
   margin: 0;
 }
 
 .transportation {
-  font-family: "PT Sans", Arial, sans-serif;
   margin: 0;
   padding-top: 30px;
 }
 .location p {
-  font-family: "PT Sans", Arial, sans-serif;
-  padding-top: 24px;
-  padding-bottom: 32px;
-  padding-right: 85px;
+  padding: 24px 85px 32px 0;
   margin: 0;
 }
 
@@ -1837,12 +1840,14 @@ input[type="search"] {
 .catalog-info {
   background: var(--basic-background);
   margin-top: 59px;
-  padding-bottom: 68px;
-  padding-top: 64px;
+  padding: 64px 0 68px 0;
 }
 
 .catalog-info p {
   font-family: "PT Sans", Arial, sans-serif;
+  font-size: 13px;
+  line-height: 24px;
+  color: var(--basic-black);
   margin: 0;
   padding-top: 25px;
 }
@@ -2170,6 +2175,14 @@ input[type="search"] {
 .filter-input-radio:hover + label::after {
   background-color: var(--radio-hover);
 }
+
+.filter-input-radio:disabled + label::before,
+.filter-input-radio:disabled + label::after {
+  border-color: var(--radio-hover);
+  background-color: var(--radio-hover);
+  opacity: 0.25;
+}
+
 
 .sort h2 {
   font-size: 13px;
