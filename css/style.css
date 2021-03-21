@@ -1221,6 +1221,14 @@ input[type="search"] {
   border: 19px solid transparent;
   border-left: 19px solid var(--basic-red);
 }
+.product--price::before {
+  content: " ";
+  position: absolute;
+  top: 1px;
+  right: 0;
+  border: 3px solid var(--basic-red);
+  border-bottom: 34px solid var(--basic-red);
+}
 
 .product-img {
   max-width: 100%;
