@@ -474,7 +474,7 @@ input[type="search"] {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  width: 299px;
+  width: 190px;
   height: 45px;
   padding-left: 56px;
   background: var(--basic-white);
@@ -503,24 +503,18 @@ input[type="search"] {
   background-image: url("../img/icon/user.svg");
 }
 
-.account::after {
-  content: "";
-  position: absolute;
-  top: 14px;
-  left: 262px;
+.exit {
   width: 20px;
   height: 17px;
-  background-image: url("../img/icon/logout.svg");
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: 0 0;
+  padding: 14px 17px 14px 17px;
+  background: var(--basic-white) url("../img/icon/logout.svg") no-repeat 16px 14px;
 }
 
-.account:hover::after {
+.exit:hover {
   background-image: url("../img/icon/icon-logout-active.svg");
 }
-.account:focus::after,
-.account:active::after {
+.exit:focus,
+.exit:active {
   background-image: url("../img/icon/logout.svg");
 }
 
