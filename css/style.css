@@ -11,7 +11,7 @@
   --letter-form-background: #F4F4F4;
   --filter-background: #F7F3EC;
   --toggle-color: #ABABAB;
-  --bacground-bar-focus: #161D29;
+  --background-bar-focus: #161D29;
   --radio-hover: #B5B5B5;
   --border-popgoods: #EAEAEA;
   --basic-border: #E5E5E5;
@@ -206,8 +206,8 @@ input[type="search"] {
 }
 
 .bookmark:focus {
-  background-color: var(--bacground-bar-focus);
-  color: var(--bacground-white);
+  background-color: var(--background-bar-focus);
+  color: var(--basic-white);
   opacity: 0.5;
 }
 
@@ -319,7 +319,7 @@ input[type="search"] {
   background-color: var(--basic-dark);
   width: 940px;
   margin: 0 auto;
-  box-shadow: inset 0px -5px 0px var(--basic-extra-dark);
+  box-shadow: inset 0 -5px 0 var(--basic-extra-dark);
 }
 
 .site-navigation {
@@ -394,7 +394,7 @@ input[type="search"] {
   text-decoration: underline;
 }
 
-.adress {
+.address {
   font-size: 14px;
   line-height: 24px;
   color: var(--basic-dark);
@@ -639,29 +639,6 @@ input[type="search"] {
   background-position: 0 0;
 }
 
-.button-wg {
-  display: flex;
-  padding: 10px 25px;
-  margin: 40px;
-  width: 135px;
-  font-family: "Cuprum","Arial",sans-serif;
-  align-items: center;
-  justify-content: center;
-  margin-top: 10px;
-  color: var(--basic-dark);
-  background-color: var(--basic-white);
-  border: 3px solid var(--basic-green);
-}
-
-.button-wg:hover {
-  border: 3px solid var(--basic-dark);
-}
-
-.button-wg:focus {
-  border: 3px solid var(--basic-dark);
-  opacity: 0.3;
-}
-
 .button-red {
   background-color: var(--basic-red);
   color: var(--basic-white);
@@ -703,8 +680,7 @@ input[type="search"] {
   line-height: 30px;
   color: var(--basic-white);
   margin: 0 0 14px 0;
-  padding: 0;
-  padding-right: 25px;
+  padding: 0 25px 0 0;
 }
 
 .features-item-material {
@@ -716,8 +692,8 @@ input[type="search"] {
 .new-long::after {
   content: "";
   position: absolute;
-  top: 0px;
-  right: 0px;
+  top: 0;
+  right: 0;
   width: 70px;
   height: 70px;
   background: url("../img/icon/new.svg") no-repeat;
@@ -943,8 +919,8 @@ input[type="search"] {
 .new.product-item::after {
   content: "";
   position: absolute;
-  top: 0px;
-  right: 0px;
+  top: 0;
+  right: 0;
   width: 70px;
   height: 70px;
   background: url("../img/icon/new.svg") no-repeat;
@@ -1170,12 +1146,12 @@ input[type="search"] {
 }
 
 .popmanufacturers-item a:hover {
-  box-shadow: 0px 4px 20px var(--border-popgoods);
+  box-shadow: 0 4px 20px var(--border-popgoods);
 }
 
 .popmanufacturers-item a:active {
   opacity: 0.3;
-  box-shadow: 0px 4px 20px var(--border-popgoods);
+  box-shadow: 0 4px 20px var(--border-popgoods);
 }
 
 .service-wrapper {
@@ -1211,7 +1187,7 @@ input[type="search"] {
   height: 100%;
   width: 20px;
   left: 230px;
-  top: 0px;
+  top: 0;
   background: url("../img/icon/service-shadow.png") no-repeat;
   z-index: 1;
 }
@@ -1222,8 +1198,8 @@ input[type="search"] {
   line-height: 30px;
   font-weight: bold;
   background-color: var(--basic-dark);
-  box-shadow: 0px 1px 0px var(--basic-extra-dark),
-  inset 0px 1px 0px var(--dark-shadow-service);
+  box-shadow: 0 1px 0 var(--basic-extra-dark),
+  inset 0 1px 0 var(--dark-shadow-service);
   z-index: -1;
 }
 
@@ -1246,7 +1222,7 @@ input[type="search"] {
 
 .checked {
   background: var(--basic-white);
-  box-shadow: 0px 1px 0px var(--basic-white);
+  box-shadow: 0 1px 0 var(--basic-white);
 }
 .checked a {
   color: var(--basic-dark);
@@ -1572,7 +1548,7 @@ input[type="search"] {
 .home-page::before {
   content: "";
   position: absolute;
-  left: 0px;
+  left: 0;
   top: 2px;
   width: 14px;
   height: 12px;
@@ -2057,7 +2033,7 @@ input[type="search"] {
   background-color: var(--basic-white);
   background-position: 0 0;
   background-repeat: repeat;
-  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.15);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
   border-top: 7px solid var(--basic-red);
   z-index: 1000;
   display: none;
@@ -2226,7 +2202,7 @@ input[type="search"] {
   content: "";
   position: absolute;
   top: 0;
-  left: 0px;
+  left: 0;
   width: 66px;
   height: 66px;
   background-image: url("../img/icon/icon-mark-ok.svg");
