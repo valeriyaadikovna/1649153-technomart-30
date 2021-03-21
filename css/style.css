@@ -156,7 +156,7 @@ input[type="search"] {
   line-height: 24px;
   cursor: pointer;
   color: var(--basic-black);
-  background: var(--basic-extra-dark) url(../img/icon/icon-search.svg) no-repeat 17px 12px;
+  background: var(--basic-extra-dark) url("../img/icon/icon-search.svg") no-repeat 17px 12px;
 }
 
 .searching::placeholder {
@@ -165,12 +165,12 @@ input[type="search"] {
 }
 
 .search-form input[type="search"]:hover {
-  background: var(--basic-extra-dark) url(../img/icon/icon-search-hover.svg) no-repeat 17px 12px;
+  background: var(--basic-extra-dark) url("../img/icon/icon-search-hover.svg") no-repeat 17px 12px;
 }
 .search-form input[type="search"]:active,
 .search-form input[type="search"]:focus {
   color: var(--basic-black);
-  background: var(--basic-white) url(../img/icon/icon-search-focus.svg) no-repeat 17px 12px;
+  background: var(--basic-white) url("../img/icon/icon-search-focus.svg") no-repeat 17px 12px;
 }
 
 .bookmark {
@@ -732,7 +732,7 @@ input[type="search"] {
   right: 0px;
   width: 70px;
   height: 70px;
-  background: url(../img/icon/new.svg) no-repeat;
+  background: url("../img/icon/new.svg") no-repeat;
 }
 .features-item-instrument {
   padding: 20px 23px 21px 23px;
@@ -959,7 +959,7 @@ input[type="search"] {
   right: 0px;
   width: 70px;
   height: 70px;
-  background: url(../img/icon/new.svg) no-repeat;
+  background: url("../img/icon/new.svg") no-repeat;
 }
 
 .product-item:hover {
@@ -1224,7 +1224,7 @@ input[type="search"] {
   width: 20px;
   left: 230px;
   top: 0px;
-  background: url(../img/icon/service-shadow.png) no-repeat;
+  background: url("../img/icon/service-shadow.png") no-repeat;
   z-index: 1;
 }
 
@@ -1275,15 +1275,15 @@ input[type="search"] {
 }
 
 .delivery {
-  background: url(../img/icon/truck.png) no-repeat 100% 67px;
+  background: url("../img/icon/truck.png") no-repeat 100% 67px;
 }
 
 .guarantee {
-  background: url(../img/pic/medal.png) no-repeat 100% 45px;
+  background: url("../img/pic/medal.png") no-repeat 100% 45px;
 }
 
 .credit {
-  background: url(../img/pic/credit.png) no-repeat 100% 45px;
+  background: url("../img/pic/credit.png") no-repeat 100% 45px;
 }
 
 .delivery-slide,
