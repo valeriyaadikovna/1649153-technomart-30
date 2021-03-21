@@ -345,7 +345,6 @@ input[type="search"] {
 .user-navigation {
   display: grid;
   grid-template-columns: 300px 340px 300px;
-  background-color: var(--basic-white);
   width: 940px;
   margin: 0 auto;
   padding-top: 42.5px;
