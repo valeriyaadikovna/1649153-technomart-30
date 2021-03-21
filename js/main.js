@@ -1,5 +1,4 @@
 /* Открыть окно с сообщением о добавлении товара в корзину */
-
 const cartLinks = document.querySelectorAll(".button--icon-start");
 const cartPopup = document.querySelector(".modal-book");
 const cartClose = cartPopup.querySelector(".modal-close");
@@ -30,9 +29,7 @@ window.addEventListener("keydown", function (evt) {
     }
   }
 });
-
 /* Напишите нам */
-
 const letterLink = document.querySelector(".letter");
 const letterPopup = document.querySelector(".modal-letter");
 
@@ -97,9 +94,7 @@ if (letterPopup) {
     }
   });
 }
-
 /* Карта */
-
 const mapLink = document.querySelector(".map");
 const mapPopup = document.querySelector(".modal-map");
 
@@ -126,7 +121,6 @@ if (mapPopup) {
   });
 }
 /* Сервисы слайдер*/
-
 const serviceLinks = document.querySelectorAll(".service-list li a");
 const serviceContents = document.querySelectorAll(".service .service-content");
 
@@ -149,9 +143,7 @@ serviceLinks.forEach(function (elem) {
 function getIndexElement(elem) {
   return Array.from(elem.parentElement.children).indexOf(elem);
 }
-
 /* Слайдер галереи */
-
 const slider = document.querySelector(".gallery-content");
 
 if (slider) {
