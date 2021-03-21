@@ -148,7 +148,7 @@ p {
 }
 
 input[type="search"] {
-  width: 270px;
+  width: 271px;
   height: 42px;
   border: none;
   padding: 9px 0 9px 42px;
@@ -175,8 +175,8 @@ input[type="search"] {
 
 .bookmark {
   position: relative;
-  padding: 9px 24px 9px 42px;
-  width: 86px;
+  padding: 9px 38px 9px 42px;
+  width: 83px;
   font-size: 18px;
   line-height: 24px;
   text-align: center;
@@ -214,7 +214,7 @@ input[type="search"] {
 .basket {
   display: flex;
   position: relative;
-  padding: 9px 0 9px 50px;
+  padding: 9px 0 9px 35px;
   font-size: 18px;
   line-height: 24px;
   text-align: center;
@@ -223,11 +223,18 @@ input[type="search"] {
   border: none;
 }
 
-.basket::before {
+.catalog-basket {
+  padding: 9px 0 9px 35px;
+  width: 101px;
+  background-color: var(--basic-red);
+}
+
+.basket::before,
+.catalog-basket::before {
   content: "";
   position: absolute;
   top: 13px;
-  left: 26px;
+  left: 12px;
   width: 15px;
   height: 15px;
   background-image: url("../img/icon/icon-cart.svg");
@@ -235,35 +242,22 @@ input[type="search"] {
   background-position: 0 0;
 }
 
-.basket:hover::before {
+.basket:hover::before,
+.catalog-basket:hover::before {
   background-image: url("../img/icon/icon-cart-active.svg");
 }
 .basket:focus::before,
-.basket:active::before {
+.basket:active::before,
+.catalog-basket:focus::before,
+.catalog-basket:active::before {
   background-image: url("../img/icon/icon-cart.svg");
 }
-.basket:focus {
-  background-color: var(--bacground-bar-focus);
-  color: var(--bacground-white);
-  opacity: 0.5;
-}
 
-.catalog-basket {
-  display: flex;
-  position: relative;
-  padding: 9px 0 9px 50px;
-  font-size: 18px;
-  line-height: 24px;
-  text-align: center;
-  text-transform: none;
-  border: none;
-  background-color: var(--basic-red);
-}
 .catalog-basket::before {
   content: "";
   position: absolute;
   top: 13px;
-  left: 20px;
+  left: 12px;
   width: 15px;
   height: 15px;
   background-image: url("../img/icon/icon-cart.svg");
@@ -300,7 +294,7 @@ input[type="search"] {
 
 .main-high-header {
   display: grid;
-  grid-template-columns: 220px 271px 150px 150px 150px;
+  grid-template-columns: 220px 271px 163px 136px 150px;
   width: 940px;
   color: var(--basic-white);
 }
@@ -538,11 +532,6 @@ input[type="search"] {
   background-image: url("../img/icon/login.svg");
 }
 
-.basket:focus {
-  background-color: var(--bacground-bar-focus);
-  color: var(--bacground-white);
-  opacity: 0.5;
-}
 .reg-link {
   position:relative;
   display: flex;
