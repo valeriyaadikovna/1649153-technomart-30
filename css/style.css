@@ -35,13 +35,14 @@
   --click-red-button: #ba2732;
   --hover-login-button: #3d546f;
   --text-footer-nav: #ffda96;
+  --primaryFontFamily: "Cuprum", "Arial", sans-serif;
+  --secondaryFontFamily: "PT Sans", Arial, sans-serif;
 }
-
 .page-body {
   min-width: 960px;
   margin: 0;
   padding: 0;
-  font-family: "Cuprum", "Arial", sans-serif;
+  font-family: var(--primaryFontFamily);
   font-size: 18px;
   line-height: 24px;
   font-weight: 400;
@@ -149,7 +150,7 @@ img {
   background-color: var(--basic-extra-dark);
 }
 
-input[type="search"] {
+.searching {
   width: 271px;
   height: 42px;
   border: none;
@@ -164,28 +165,28 @@ input[type="search"] {
 
 .searching::-webkit-input-placeholder {
   color: var(--basic-white);
-  font-family: "Cuprum", "Arial", sans-serif;
+  font-family: var(--primaryFontFamily);
 }
 
 .searching::-moz-placeholder {
   opacity: 1;
   color: var(--basic-white);
-  font-family: "Cuprum", "Arial", sans-serif;
+  font-family: var(--primaryFontFamily);
 }
 
 .searching:-ms-input-placeholder {
   color: var(--basic-white);
-  font-family: "Cuprum", "Arial", sans-serif;
+  font-family: var(--primaryFontFamily);
 }
 
 .searching::-ms-input-placeholder {
   color: var(--basic-white);
-  font-family: "Cuprum", "Arial", sans-serif;
+  font-family: var(--primaryFontFamily);
 }
 
 .searching::placeholder {
   color: var(--basic-white);
-  font-family: "Cuprum", "Arial", sans-serif;
+  font-family: var(--primaryFontFamily);
 }
 
 .search-form input[type="search"]:hover {
@@ -643,7 +644,7 @@ input[type="search"] {
 .catalog-button {
   border: 1px solid var(--basic-border);
   padding: 10px 79px 10px 78px;
-  font-family: "PT Sans", Arial, sans-serif;
+  font-family: var(--secondaryFontFamily);
   font-size: 13px;
   margin-top: 14.5px;
   cursor: pointer;
@@ -691,7 +692,7 @@ input[type="search"] {
   display: -ms-flexbox;
   display: flex;
   position: relative;
-  font-family: "Cuprum", "Arial", sans-serif;
+  font-family: var(--primaryFontFamily);
   width: 135px;
   padding: 10px 12px 10px 25px;
   margin: 38px 44px 10px 41px;
@@ -1038,7 +1039,7 @@ input[type="search"] {
 }
 
 .product-item {
-  font-family: "PT Sans", Arial, sans-serif;
+  font-family: var(--secondaryFontFamily);
   font-style: normal;
   font-weight: bold;
   font-size: 17px;
@@ -1136,7 +1137,7 @@ input[type="search"] {
   height: 100%;
   padding: 38px 41px 38px 41px;
   background-color: var(--basic-white);
-  font-family: "Cuprum", Arial, sans-serif;
+  font-family: var(--primaryFontFamily);
 }
 
 .product--buttons .buy--button {
@@ -1368,7 +1369,7 @@ input[type="search"] {
   font-size: 13px;
   line-height: 24px;
   color: var(--basic-black);
-  font-family: "PT Sans", Arial, sans-serif;
+  font-family: var(--secondaryFontFamily);
 }
 
 .about-service {
@@ -1489,7 +1490,7 @@ input[type="search"] {
   font-size: 13px;
   line-height: 24px;
   color: var(--basic-black);
-  font-family: "PT Sans", Arial, sans-serif;
+  font-family: var(--secondaryFontFamily);
 }
 
 .info .h2-black {
@@ -1789,7 +1790,7 @@ input[type="search"] {
 
 .breadcrumbs a,
 .breadcrumbs li {
-  font-family: "PT Sans", Arial, sans-serif;
+  font-family: var(--secondaryFontFamily);
   font-size: 13px;
   line-height: 18px;
   text-transform: uppercase;
@@ -1852,7 +1853,7 @@ input[type="search"] {
 }
 
 .catalog-info p {
-  font-family: "PT Sans", Arial, sans-serif;
+  font-family: var(--secondaryFontFamily);
   font-size: 13px;
   line-height: 24px;
   color: var(--basic-black);
@@ -1875,7 +1876,7 @@ input[type="search"] {
   margin-right: 10px;
   font-size: 13px;
   line-height: 18px;
-  font-family: "PT Sans", Arial, sans-serif;
+  font-family: var(--secondaryFontFamily);
   background-color: var(--basic-red);
   color: var(--basic-white);
   border: none;
@@ -1887,7 +1888,7 @@ input[type="search"] {
   margin-right: 10px;
   font-size: 13px;
   line-height: 18px;
-  font-family: "PT Sans", Arial, sans-serif;
+  font-family: var(--secondaryFontFamily);
   background-color: var(--basic-white);
   color: var(--basic-black);
   border: 1px solid var(--basic-border);
@@ -1912,7 +1913,7 @@ input[type="search"] {
 
 .filters {
   width: 220px;
-  font-family: "PT Sans", Arial, sans-serif;
+  font-family: var(--secondaryFontFamily);
 }
 
 .range-filter {
@@ -1983,7 +1984,7 @@ input[type="search"] {
 
 .price-controls label {
   text-transform: uppercase;
-  font-family: "PT Sans", Arial, sans-serif;
+  font-family: var(--secondaryFontFamily);
   font-size: 17px;
   line-height: 18px;
 }
@@ -2228,7 +2229,7 @@ input[type="search"] {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  font-family: "PT Sans", Arial, sans-serif;
+  font-family: var(--secondaryFontFamily);
   margin: 20px 0 28px 0;
   text-transform: uppercase;
   font-size: 13px;
@@ -2498,7 +2499,7 @@ input[type="search"] {
 .input-e-mail,
 .input-textarea {
   margin-top: 11px;
-  font-family: "PT Sans", Arial, sans-serif;
+  font-family: var(--secondaryFontFamily);
   font-size: 13px;
   line-height: 24px;
   border: 2px solid var(--basic-extra-light);
